@@ -40,15 +40,15 @@ function App() {
 
     return (
         <div className="App">
-            <header className="App-header">
-                <p>Hello World! These are Tianqi Huo's sample work</p>
-            </header>
+            {/*<header className="App-header">*/}
+            {/*    <p>Hello World! These are Tianqi Huo's sample work</p>*/}
+            {/*</header>*/}
 
             {/* PDF Display Container */}
             <div className="pdf-display" ref={pdfContainerRef}>
                 {/* Canvases will be appended here */}
             </div>
-            
+
         </div>
     );
 }
