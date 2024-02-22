@@ -48,7 +48,8 @@ function App() {
 
             {/*video*/}
             <div className="video">
-                <video width="320" height="240" controls>
+                <p>After Effect Sample work</p>
+                <video width="820" height="640" controls>
                     <source src="AsMod4.2_TianqiHuo.mp4" type="video/mp4"/>
                     Your browser does not support the video tag.
                 </video>
