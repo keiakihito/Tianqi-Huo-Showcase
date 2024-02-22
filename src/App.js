@@ -7,6 +7,7 @@ function App() {
                 <p>Hello World! These are Tianqi Huo's sample work</p>
             </header>
 
+
             {/*project 1*/}
             <div className="project">
                 <p>Clickable Prototype Task 1</p>
