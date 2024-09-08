@@ -1,4 +1,4 @@
-// File: /Users/keita-katsumi/Dropbox/Programing/GitHub/tianqi-huo-showcase-framer/app/about/page.tsx
+// File: /Users/keita-katsumi/Dropbox/Programing/GitHub/rini_portfolio/Tianqi-Huo-Showcase/app/about/page.tsx
 import * as entry from '../../../../app/about/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

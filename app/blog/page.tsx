@@ -18,18 +18,18 @@ const projects = [
         description: "Description of Campaigns One, Two & Three Compilation.",
         type: "pdf"
     },
-    {
-        title: "The Ivy Restaurant",
-        fileName: "9_1_Tianqi Huo.pdf",
-        description: "Description of The Ivy Restaurant.",
-        type: "pdf"
-    },
-    {
-        title: "Movie 1",
-        fileName: "6_1_Tianqi_Huo.mov",
-        description: "Description of movie 1.",
-        type: "mov"
-    },
+    // {
+    //     title: "The Ivy Restaurant",
+    //     fileName: "9_1_Tianqi Huo.pdf",
+    //     description: "Description of The Ivy Restaurant.",
+    //     type: "pdf"
+    // },
+    // {
+    //     title: "Movie 1",
+    //     fileName: "6_1_Tianqi_Huo.mov",
+    //     description: "Description of movie 1.",
+    //     type: "mov"
+    // },
     {
         title: "Movie 2",
         fileName: "AsMod4.2_Tianqi Huo.mp4",
@@ -70,14 +70,14 @@ const Project = () => {
                                 </div>
                             )}
 
-                            {project.type === "mov" && (
-                                <div style={{ margin: "0 auto", width: "75%", maxWidth: "800px" }}>
-                                    <video width="100%" controls>
-                                        <source src={`/projects/video/${project.fileName}`} type="video/quicktime" />
-                                        Your browser does not support the video tag.
-                                    </video>
-                                </div>
-                            )}
+                            {/*{project.type === "mov" && (*/}
+                            {/*    <div style={{ margin: "0 auto", width: "75%", maxWidth: "800px" }}>*/}
+                            {/*        <video width="100%" controls>*/}
+                            {/*            <source src={`/projects/video/${project.fileName}`} type="video/quicktime" />*/}
+                            {/*            Your browser does not support the video tag.*/}
+                            {/*        </video>*/}
+                            {/*    </div>*/}
+                            {/*)}*/}
                         </div>
                     ))}
                 </div>

@@ -1,4 +1,4 @@
-// File: /Users/keita-katsumi/Dropbox/Programing/GitHub/tianqi-huo-showcase-framer/app/layout.tsx
+// File: /Users/keita-katsumi/Dropbox/Programing/GitHub/rini_portfolio/Tianqi-Huo-Showcase/app/layout.tsx
 import * as entry from '../../../app/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
