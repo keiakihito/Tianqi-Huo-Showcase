@@ -1,12 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     webpack: function(config) {
-        config.module.rules.push({
-            test:/\.md$/,
-            use: "raw-loader",
-        })
-        return config
+        // Keep any custom rules you need for handling files like PDFs
+        return config;
     },
+    trailingSlash: false, // Ensures proper URL handling without trailing slashes
 };
 
 export default nextConfig;
