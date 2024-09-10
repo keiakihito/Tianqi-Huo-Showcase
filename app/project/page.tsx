@@ -26,12 +26,14 @@ const projects = [
     //     description: "Description of The Ivy Restaurant.",
     //     type: "pdf"
     // },
-    // {
-    //     title: "Movie 1",
-    //     fileName: "6_1_Tianqi_Huo.mov",
-    //     description: "Description of movie 1.",
-    //     type: "mov"
-    // },
+    {
+        title: "Movie 1",
+        fileName: "6_1_Tianqi_Huo.mov",
+        youtubeLink: "https://www.youtube.com/watch?v=AoiK6pU1umk",
+        description: "Description of movie 1.",
+        type: "youtube",
+        slug: "movie-1"
+    },
     {
         title: "Movie 2",
         fileName: "AsMod4.2_Tianqi Huo.mp4",
@@ -74,13 +76,12 @@ const ProjectList = () => {
                                 </div>
                             )}
 
-                            {/* Conditionally Render MOV Video */}
-                            {project.type === "mov" && (
+
+                            {project.type === "youtube" && (
                                 <div style={{ margin: "0 auto", width: "75%", maxWidth: "800px" }}>
-                                    <video width="100%" controls>
-                                        <source src={`/projects/video/${project.fileName}`} type="video/quicktime" />
-                                        Your browser does not support the video tag.
-                                    </video>
+                                    <a href={project.youtubeLink} target="_blank" rel="noopener noreferrer">
+                                        Watch Video on YouTube
+                                    </a>
                                 </div>
                             )}
 
