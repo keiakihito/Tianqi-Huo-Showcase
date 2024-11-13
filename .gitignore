@@ -1,2 +1,4 @@
 node_modules/
 node_modules/
+# Ignore all images files in the public/images directory
+public/images/
