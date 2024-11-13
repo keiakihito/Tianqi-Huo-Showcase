@@ -4,56 +4,44 @@ import { projects, Project } from "./projectsData";
 
 const ProjectList = () => {
     return (
-        <div style={{ textAlign: "center" }}>
+        <div className="main-content">
             <h1>Projects</h1>
             <p>A collection of previous projects</p>
             {projects.map((project, index) => (
-                <div key={index} style={{ marginBottom: "50px" }}>
+                <div key={index} className="project-card">
                     <h2>{project.title}</h2>
                     <p>{project.description}</p>
 
                     {/* Render Thumbnail Based on Type */}
                     {project.type === "image" && (
                         <img
-                            src={project.images?.[0]}
+                            src={project.images?.[0]?.src}
                             alt={`${project.title} Thumbnail`}
-                            style={{ width: "100%", maxWidth: "600px", height: "auto" }}
+                            className="thumbnail"
                         />
                     )}
                     {project.type === "youtube" && (
                         <img
                             src="/projects/images/youtube-thumbnail.png"
                             alt={`${project.title} YouTube Thumbnail`}
-                            style={{ width: "100%", maxWidth: "600px", height: "auto" }}
+                            className="thumbnail"
                         />
                     )}
                     {project.type === "video" && (
                         <img
                             src="/projects/images/video-thumbnail.png"
                             alt={`${project.title} Video Thumbnail`}
-                            style={{ width: "100%", maxWidth: "600px", height: "auto" }}
+                            className="thumbnail"
                         />
                     )}
-                    <div style={{ textAlign: "center", marginBottom: "20px" }}>
-                    <Link href={`/project/${project.slug}`} passHref>
-                        <Button
-                            variant="contained"
-                            style={{
-                                backgroundColor: "#A8DADC", // Soft pastel blue color
-                                color: "#1D3557",           // Darker text color for contrast
-                                borderRadius: "10px",
-                                padding: "8px 16px",
-                                minWidth: "150px",
-                                maxWidth: "200px",
-                                fontSize: "14px",
-                                fontWeight: "bold",
-                                boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
-                                textTransform: "none",     // Prevents uppercase text
-                            }}
-                        >
-                            View Project Details
-                        </Button>
-                    </Link>
+
+                    {/* Link Button */}
+                    <div className="center-button-container">
+                        <Link href={`/project/${project.slug}`} passHref>
+                            <Button variant="contained" className="center-view-button">
+                                View Project Details
+                            </Button>
+                        </Link>
                     </div>
                 </div>
             ))}
@@ -61,5 +49,4 @@ const ProjectList = () => {
     );
 };
 
-// This is important: Ensure the component is exported as default
 export default ProjectList;

@@ -1,39 +1,261 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500&display=swap');*/
+
+/*html {*/
+/*    font-size: 62.5%;*/
+/*}*/
+
+/*body {*/
+/*    font-family: 'Noto Sans JP', sans-serif;*/
+/*    font-weight: 400;*/
+/*    font-size: 1.6rem;*/
+/*    font-display: swap;*/
+/*    color: #333;*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*    border: 0;*/
+/*}*/
+
+/*h1, h2, h3, h4, h5 {*/
+/*    font-weight: 500;*/
+/*    margin: 0;*/
+/*}*/
+
+/*a {*/
+/*    text-decoration: none;*/
+/*}*/
+
+/*ul {*/
+/*    list-style-type: none;*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*}*/
+
+/*.container {  */
+/*    max-width: 800px; */
+/*    margin-right: auto; */
+/*    margin-left:  auto;*/
+/*    padding-right: 30px; */
+/*    padding-left:  30px;*/
+/*}*/
+
+
+
+/* Import Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500&display=swap');
 
+/* Global Styles */
 html {
-    font-size: 62.5%;
+    font-size: 62.5%; /* Sets 1rem = 10px for easy scaling */
+    min-height: 100%;
 }
 
 body {
     font-family: 'Noto Sans JP', sans-serif;
     font-weight: 400;
-    font-size: 1.6rem;
-    font-display: swap;
+    font-size: 1.6rem; /* Base font size: 16px */
     color: #333;
     margin: 0;
     padding: 0;
     border: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
+/* Headings */
 h1, h2, h3, h4, h5 {
     font-weight: 500;
     margin: 0;
+    padding: 10px 0;
 }
 
+/* Links */
 a {
     text-decoration: none;
+    color: #1D3557; /* Dark blue for contrast */
 }
 
+/* Lists */
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
 
-.container {  
-    max-width: 800px; 
-    margin-right: auto; 
-    margin-left:  auto;
-    padding-right: 30px; 
-    padding-left:  30px;
+/* Container */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 30px;
+    flex: 1; /* Ensures the container takes up available space */
+}
+
+/* Button Styling */
+button {
+    border-radius: 10px;
+    background-color: #F4A7B9; /* Soft pastel pink color */
+    color: #1D1D1D;
+    padding: 10px 20px;
+    font-weight: bold;
+    font-size: 1.4rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: none; /* Prevents uppercase text */
+}
+
+button:hover {
+    background-color: #EFA3B1; /* Slightly darker pastel pink on hover */
+    transform: translateY(-2px);
+}
+
+/* Image Styling */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+/* Footer Styling */
+footer {
+    margin-top: auto;
+    padding: 20px 0;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+}
+
+/* Fix White Space Issue */
+#root, #__next {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Center Content */
+.main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+
+/* Project Card */
+.project-card {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+/* Thumbnail Image */
+.thumbnail {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+/* Button Container */
+/* Centered Button for Project Main Page */
+.center-button-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+
+/* Button Styling */
+.center-view-button {
+    background-color: #A8DADC; /* Soft pastel blue */
+    color: #1D3557; /* Darker text color */
+    border-radius: 10px;
+    padding: 8px 16px;
+    min-width: 150px;
+    max-width: 200px;
+    font-size: 14px;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-transform: none;
+}
+
+.center-view-button:hover {
+    background-color: #457B9D; /* Slightly darker blue on hover */
+    transform: translateY(-2px);
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto 20px;
+    padding: 0 20px;
+}
+
+
+/* View Button */
+.view-button {
+    background-color: #F4A7B9; /* Soft pastel pink */
+    color: #1D3557;            /* Darker text color */
+    border-radius: 10px;
+    padding: 8px 16px;
+    min-width: 150px;
+    max-width: 200px;
+    font-size: 14px;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-transform: none;
+}
+
+.view-button:hover {
+    background-color: #EFA3B1; /* Slightly darker on hover */
+    transform: translateY(-2px);
+}
+
+/* Single column layout for project images */
+.image-gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; /* Space between images */
+    width: 100%; /* Take full width of the container */
+}
+
+/* Ensure images do not overflow */
+.image-gallery img {
+    width: 100%;
+    max-width: 800px; /* Set a maximum width for large screens */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* View Button */
+.view-button {
+    background-color: #F4A7B9; /* Soft pastel pink */
+    color: #1D3557; /* Darker text color */
+    border-radius: 10px;
+    padding: 8px 16px;
+    min-width: 150px;
+    max-width: 200px;
+    font-size: 14px;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-transform: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.view-button:hover {
+    background-color: #EFA3B1; /* Slightly darker on hover */
+    transform: translateY(-2px);
+}
+.view-button:hover {
+    background-color: #EFA3B1; /* Slightly darker pastel pink on hover */
+    transform: translateY(-2px);
 }
