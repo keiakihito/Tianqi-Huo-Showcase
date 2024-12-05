@@ -41,7 +41,7 @@ const Index = () => {
                   </div>
               </div>
               <div className="ctaButton">
-                  <Link href="/contact">Make It Happen!</Link>
+                  <Link href="/contact">Reach Me Out!</Link>
               </div>
           </div>
       </>

@@ -7,16 +7,31 @@ const About = () => {
     return (
         <>
             <div className="wrapper">
-                <div className="container">
-                    <h1>About Me</h1>
-                    <p>Below is my resume:</p>
-                    {/* Embedding the PDF using embed */}
-                    <embed
-                        src="/Resume_for_Website.pdf"
-                        type="application/pdf"
+                <div className="container" style={{ textAlign: "center" }}>
+                    <h1 style={{ textAlign: "center", marginBottom: "20px" }}>Resume</h1>
+                    {/* Displaying the JPG version of the resume */}
+                    <img
+                        src="/Resume_for_Website.jpg"
+                        alt="Resume"
                         width="100%"
-                        height="800px"
+                        style={{ maxWidth: "800px", margin: "0 auto", display: "block" }}
                     />
+                    {/* Button to download the PDF version */}
+                    <div style={{ textAlign: "center", marginTop: "20px" }}>
+                        <a
+                            href="/Resume_for_Website.pdf"
+                            download
+                            style={{
+                                padding: "10px 20px",
+                                backgroundColor: "#007BFF",
+                                color: "#FFF",
+                                textDecoration: "none",
+                                borderRadius: "5px",
+                            }}
+                        >
+                            Download PDF
+                        </a>
+                    </div>
                 </div>
             </div>
         </>
