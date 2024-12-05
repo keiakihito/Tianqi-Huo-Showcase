@@ -65,6 +65,32 @@ body {
     flex-direction: column;
 }
 
+/* Refined Button Style */
+.button {
+    background-color: #915122; /* Background color */
+    color: white; /* Text color */
+    border: none; /* No border */
+    padding: 12px 30px; /* Proportional padding */
+    border-radius: 30px; /* Adjust for smoother rounded edges */
+    cursor: pointer; /* Pointer cursor */
+    text-decoration: none; /* Remove underline for links */
+    font-size: 1.6rem; /* Consistent font size */
+    display: inline-block; /* Prevent stretching */
+    text-align: center; /* Align text within the button */
+    transition: all 0.3s ease; /* Smooth transitions for hover */
+    margin: 20px auto; /* Center the button horizontally and add spacing */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add slight shadow for depth */
+}
+
+/* Hover Effect */
+.button:hover {
+    background-color: #6b3e1a; /* Darker color on hover */
+    transform: translateY(-2px); /* Subtle lift effect */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+}
+
+
+
 /* Headings */
 h1, h2, h3, h4, h5 {
     font-weight: 500;
@@ -435,26 +461,45 @@ label {
     font-size: 1.4rem;
 }
 
-button {
-    width: 100%;
-    border: none;
-    color: white;
-    padding: 0.5rem 2rem;
-    font-size: 1.6rem;
+/*button {*/
+/*    width: 100%;*/
+/*    border: none;*/
+/*    color: white;*/
+/*    padding: 0.5rem 2rem;*/
+/*    font-size: 1.6rem;*/
+/*    color: #fff;*/
+/*    background-color: #ff5436;*/
+/*    transition-duration: 0.4s;*/
+/*    border-radius: 5px;*/
+/*}*/
+
+/*button:hover {*/
+/*    opacity: 0.8;*/
+/*    cursor: pointer;*/
+/*}*/
+
+/*button:focus {*/
+/*    outline: none;*/
+/*}*/
+
+.ctaButton {
+    padding: 0 0 10rem;
+    text-align: center;
+}
+
+.ctaButton > a {
+    display: inline-block;
+    margin: 10rem 0;
+    padding: 1.3rem 6rem;
+    background-color: #A54f25;
+    border-radius: 25px;
     color: #fff;
-    background-color: #ff5436;
-    transition-duration: 0.4s;
-    border-radius: 5px;
 }
 
-button:hover {
+.ctaButton > a:hover {
     opacity: 0.8;
-    cursor: pointer;
 }
 
-button:focus {
-    outline: none;
-}
 /*!******************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[3]!./app/styles/index.css ***!
   \******************************************************************************************************************************************************************************************************************************************************************/
@@ -541,7 +586,7 @@ button:focus {
     display: inline-block;
     margin: 10rem 0;
     padding: 1.3rem 6rem;
-    background-color: #ff5436;
+    background-color: #A54f25;
     border-radius: 25px; 
     color: #fff;
 }
@@ -571,6 +616,7 @@ button:focus {
         margin-bottom: 3rem;
     }
 }
+
 /*!***********************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[3]!./app/styles/singleBlog.css ***!
   \***********************************************************************************************************************************************************************************************************************************************************************/
@@ -589,6 +635,29 @@ button:focus {
 .wrapper {
     padding: 5rem 0 10rem;
 }
+
+/* Custom Button Style */
+.center-view-button {
+    background-color: #A54f25 !important; /* Set button color */
+    color: white !important; /* Set text color */
+    padding: 10px 30px !important; /* Refined padding for better proportions */
+    border-radius: 12px !important; /* Subtle rounded edges */
+    font-size: 1.6rem !important; /* Consistent font size */
+    text-transform: none !important; /* No uppercase text */
+    transition: all 0.3s ease-in-out !important; /* Smooth transition for hover effects */
+    display: inline-block; /* Prevent stretching */
+    text-align: center; /* Center text within the button */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add slight shadow for depth */
+}
+
+/* Hover Effect */
+.center-view-button:hover {
+    background-color: #8c441e !important; /* Darken on hover */
+    transform: translateY(-3px); /* Add subtle lift on hover */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+}
+
+
 
 /* PrevNext */
 .pnWrapper {
@@ -626,3 +695,4 @@ button:focus {
         flex-wrap: wrap;
     }
 }
+

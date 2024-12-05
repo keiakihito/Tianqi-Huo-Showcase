@@ -14,6 +14,29 @@
     padding: 5rem 0 10rem;
 }
 
+/* Custom Button Style */
+.center-view-button {
+    background-color: #A54f25 !important; /* Set button color */
+    color: white !important; /* Set text color */
+    padding: 10px 30px !important; /* Refined padding for better proportions */
+    border-radius: 12px !important; /* Subtle rounded edges */
+    font-size: 1.6rem !important; /* Consistent font size */
+    text-transform: none !important; /* No uppercase text */
+    transition: all 0.3s ease-in-out !important; /* Smooth transition for hover effects */
+    display: inline-block; /* Prevent stretching */
+    text-align: center; /* Center text within the button */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add slight shadow for depth */
+}
+
+/* Hover Effect */
+.center-view-button:hover {
+    background-color: #8c441e !important; /* Darken on hover */
+    transform: translateY(-3px); /* Add subtle lift on hover */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+}
+
+
+
 /* PrevNext */
 .pnWrapper {
     display: flex;

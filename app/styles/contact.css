@@ -17,23 +17,41 @@ label {
     font-size: 1.4rem;
 }
 
-button {
-    width: 100%;
-    border: none;
-    color: white;
-    padding: 0.5rem 2rem;
-    font-size: 1.6rem;
+/*button {*/
+/*    width: 100%;*/
+/*    border: none;*/
+/*    color: white;*/
+/*    padding: 0.5rem 2rem;*/
+/*    font-size: 1.6rem;*/
+/*    color: #fff;*/
+/*    background-color: #ff5436;*/
+/*    transition-duration: 0.4s;*/
+/*    border-radius: 5px;*/
+/*}*/
+
+/*button:hover {*/
+/*    opacity: 0.8;*/
+/*    cursor: pointer;*/
+/*}*/
+
+/*button:focus {*/
+/*    outline: none;*/
+/*}*/
+
+.ctaButton {
+    padding: 0 0 10rem;
+    text-align: center;
+}
+
+.ctaButton > a {
+    display: inline-block;
+    margin: 10rem 0;
+    padding: 1.3rem 6rem;
+    background-color: #A54f25;
+    border-radius: 25px;
     color: #fff;
-    background-color: #ff5436;
-    transition-duration: 0.4s;
-    border-radius: 5px;
 }
 
-button:hover {
+.ctaButton > a:hover {
     opacity: 0.8;
-    cursor: pointer;
-}
-
-button:focus {
-    outline: none;
 }

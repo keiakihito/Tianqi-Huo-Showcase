@@ -62,6 +62,32 @@ body {
     flex-direction: column;
 }
 
+/* Refined Button Style */
+.button {
+    background-color: #915122; /* Background color */
+    color: white; /* Text color */
+    border: none; /* No border */
+    padding: 12px 30px; /* Proportional padding */
+    border-radius: 30px; /* Adjust for smoother rounded edges */
+    cursor: pointer; /* Pointer cursor */
+    text-decoration: none; /* Remove underline for links */
+    font-size: 1.6rem; /* Consistent font size */
+    display: inline-block; /* Prevent stretching */
+    text-align: center; /* Align text within the button */
+    transition: all 0.3s ease; /* Smooth transitions for hover */
+    margin: 20px auto; /* Center the button horizontally and add spacing */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add slight shadow for depth */
+}
+
+/* Hover Effect */
+.button:hover {
+    background-color: #6b3e1a; /* Darker color on hover */
+    transform: translateY(-2px); /* Subtle lift effect */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+}
+
+
+
 /* Headings */
 h1, h2, h3, h4, h5 {
     font-weight: 500;

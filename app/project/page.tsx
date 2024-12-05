@@ -39,7 +39,7 @@ const ProjectList = () => {
                     <div className="center-button-container">
                         <Link href={`/project/${project.slug}`} passHref>
                             <Button variant="contained" className="center-view-button">
-                                View Project Details
+                                Project Details
                             </Button>
                         </Link>
                     </div>

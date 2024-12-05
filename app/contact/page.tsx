@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export const metadata = {
     title: "Contact",
     description: "This is contact page",
@@ -17,7 +19,9 @@ const Contact = () => {
                         <input type="email" name="email" id="email" required/>
                         <label htmlFor="textarea">Description</label>
                         <textarea name="message" rows={10} id="textarea" required></textarea>
-                        <button type="submit">Submit</button>
+                        <div className="ctaButton">
+                            <button type="submit">Submit</button>
+                        </div>
                     </form>
                 </div>
             </div>

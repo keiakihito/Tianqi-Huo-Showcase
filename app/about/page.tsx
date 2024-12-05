@@ -23,7 +23,7 @@ const About = () => {
                             download
                             style={{
                                 padding: "10px 20px",
-                                backgroundColor: "#007BFF",
+                                backgroundColor: "#A54f25",
                                 color: "#FFF",
                                 textDecoration: "none",
                                 borderRadius: "5px",
