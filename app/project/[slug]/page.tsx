@@ -21,18 +21,18 @@ const ProjectDetail = ({ params }: { params: { slug: string } }) => {
     return (
         <div style={{textAlign: "center"}}>
             <h1>{project.title}</h1>
-            <p>{project.description}</p>
+            {/*<p>{project.description}</p>*/}
 
             {/* Display Images with Descriptions */}
             <div className="image-gallery">
                 {project.images?.map((item, index) => (
                     <div key={index} style={{marginBottom: "20px"}}>
+                        <p style={{marginTop: "10px", fontStyle: "italic"}}>{item.description}</p>
                         <img
                             src={item.src}
                             alt={`Image ${index + 1} of ${project.title}`}
                             style={{width: "100%", maxWidth: "600px", height: "auto", borderRadius: "10px"}}
                         />
-                        <p style={{marginTop: "10px", fontStyle: "italic"}}>{item.description}</p>
                     </div>
                 ))}
             </div>
