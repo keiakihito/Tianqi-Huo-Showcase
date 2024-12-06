@@ -12,27 +12,36 @@ const ProjectList = () => {
                     <h2>{project.title}</h2>
                     <p>{project.description}</p>
 
-                    {/* Render Thumbnail Based on Type */}
-                    {project.type === "image" && (
+                    {/* Render Thumbnail Based on First Media Item */}
+                    {project.media?.[0]?.type === "image" && (
                         <img
-                            src={project.images?.[0]?.src}
+                            src={project.media[0].src}
                             alt={`${project.title} Thumbnail`}
                             className="thumbnail"
+                            style={{
+                                maxWidth: "90%", // Set the thumbnail size
+                                height: "auto",
+                                borderRadius: "10px",
+                                marginBottom: "20px",
+                            }}
                         />
                     )}
-                    {project.type === "youtube" && (
-                        <img
-                            src="/projects/images/youtube-thumbnail.png"
-                            alt={`${project.title} YouTube Thumbnail`}
+                    {project.media?.[0]?.type === "video" && (
+                        <video
                             className="thumbnail"
-                        />
-                    )}
-                    {project.type === "video" && (
-                        <img
-                            src="/projects/images/video-thumbnail.png"
-                            alt={`${project.title} Video Thumbnail`}
-                            className="thumbnail"
-                        />
+                            autoPlay
+                            loop
+                            muted
+                            style={{
+                                maxWidth: "90%", // Set the thumbnail size
+                                height: "auto",
+                                borderRadius: "10px",
+                                marginBottom: "20px",
+                            }}
+                        >
+                            <source src={project.media[0].src} type="video/mp4" />
+                            Your browser does not support the video tag.
+                        </video>
                     )}
 
                     {/* Link Button */}
