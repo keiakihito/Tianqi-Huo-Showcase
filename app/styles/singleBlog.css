@@ -73,3 +73,13 @@
         flex-wrap: wrap;
     }
 }
+
+.description-text {
+    font-style: normal; /* Removes italics */
+    /*color: #333; !* Change to your desired color *!*/
+    font-size: 18px; /* Adjust font size */
+    font-weight: bold; /* Optional: bold text */
+    margin-bottom: 10px; /* Add spacing below */
+}
+
+

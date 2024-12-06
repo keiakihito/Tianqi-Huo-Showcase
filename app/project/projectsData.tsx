@@ -1,7 +1,9 @@
 // Define a new type for images with description
 export type ImageWithDescription = {
     src: string;
-    description: string | null;
+    header?: string | null; // Optional field for a header above the image
+    description?: string | null; // Optional description for the image
+    list?: string[] | null; // Optional list of strings for additional details
 };
 
 export type Project = {
@@ -17,9 +19,16 @@ export const projects: Project[] = [
 
     { // Project 1
         title: "EcoStitch",
-        type: "image",
+        type: "video",
         images: [
-            { src: "/images/project1/Project1 Web_Page_01.jpg", description: "PROPOSAL ABSTRACT"},
+            { src: "/images/project1/Project1 Web_Page_01.jpg",
+                header: "PROPOSAL ABSTRACT", // New field
+                description: "Description is here",
+                list: [
+                "- List Item 1",
+                "- List Item 2",
+                "- List Item 3",
+            ] },// New list of strings
             { src: "/images/project1/Project1 Web_Page_02.jpg", description: "" },
             { src: "/images/project1/Project1 Web_Page_03.jpg", description: "" },
             { src: "/images/project1/Project1 Web_Page_04.jpg", description: "" },
@@ -39,6 +48,7 @@ export const projects: Project[] = [
             { src: "/images/project1/Project1 Web_Page_18.jpg", description: "" },
             { src: "/images/project1/Project1 Web_Page_19.jpg", description: "PROTOTYPE" },
         ],
+        fileName: "/videos/AsMod4.2_Tianqi Huo.mp4",
         description: "Project 1 description.",
         slug: "eco-stitch",
     },
