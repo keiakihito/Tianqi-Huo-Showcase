@@ -8,6 +8,8 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+    box-shadow: none !important; /* Explicitly remove any shadow */
+    border: none !important; /* Optional: remove borders if applied elsewhere */
 }
 
 .wrapper {
@@ -25,14 +27,12 @@
     transition: all 0.3s ease-in-out !important; /* Smooth transition for hover effects */
     display: inline-block; /* Prevent stretching */
     text-align: center; /* Center text within the button */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add slight shadow for depth */
 }
 
 /* Hover Effect */
 .center-view-button:hover {
     background-color: #8c441e !important; /* Darken on hover */
     transform: translateY(-3px); /* Add subtle lift on hover */
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
 }
 
 

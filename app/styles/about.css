@@ -8,11 +8,9 @@
     display: inline-block; /* Ensure it behaves like a button */
     text-align: center; /* Center text inside the button */
     transition: all 0.3s ease-in-out; /* Smooth transition for hover effect */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
 }
 
 .download-button:hover {
     background-color: #8c441e; /* Slightly darker background on hover */
     transform: translateY(-3px); /* Subtle lift effect on hover */
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Enhance shadow on hover */
 }
