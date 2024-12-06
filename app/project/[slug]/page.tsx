@@ -29,16 +29,16 @@ const ProjectDetail = ({ params }: { params: { slug: string } }) => {
             {/*<p>{project.description}</p>*/}
 
             {/* Display Images with Headers, Descriptions, and Lists */}
-            <div className="image-gallery">
-                {project.images?.map((item, index) => (
-                    <div key={index} style={{ marginBottom: "40px" }}>
+            <div className="media-gallery">
+                {project.media?.map((item, index) => (
+                    <div key={index} style={{marginBottom: "40px"}}>
                         {/* Header */}
                         {item.header && (
                             <h2
                                 style={{
                                     fontSize: "24px",
                                     fontWeight: "bold",
-                                    color: "#0073e6",
+                                    color: "#A54f25",
                                     marginBottom: "10px",
                                 }}
                             >
@@ -63,56 +63,54 @@ const ProjectDetail = ({ params }: { params: { slug: string } }) => {
                         {item.list && (
                             <ul
                                 style={{
-                                    paddingLeft: "20px",
-                                    textAlign: "left", // Align list to the left
+                                    paddingLeft: "20%",
+                                    textAlign: "left",
                                     marginBottom: "10px",
                                     color: "#555",
                                 }}
                             >
                                 {item.list.map((listItem, i) => (
-                                    <li key={i} style={{ marginBottom: "5px" }}>
+                                    <li key={i} style={{marginBottom: "5px"}}>
                                         {listItem}
                                     </li>
                                 ))}
                             </ul>
                         )}
 
-                        {/* Image */}
-                        <img
-                            src={item.src}
-                            alt={item.header || `Image ${index + 1}`}
-                            style={{
-                                width: "800px", // Adjust width as needed
-                                maxWidth: "90%", // Ensure responsiveness
-                                height: "auto",
-                                borderRadius: "10px",
-                                marginTop: "20px",
-                            }}
-                        />
+                        {/* Render Image or Video */}
+                        {item.type === "image" ? (
+                            <img
+                                src={item.src}
+                                alt={item.header || `Media ${index + 1}`}
+                                style={{
+                                    width: "800px",
+                                    maxWidth: "90%",
+                                    height: "auto",
+                                    borderRadius: "10px",
+                                    marginTop: "20px",
+                                }}
+                            />
+                        ) : item.type === "video" ? (
+                            <video
+                                autoPlay
+                                loop
+                                muted
+                                style={{
+                                    maxWidth: "90%",
+                                    width: "100%",
+                                    height: "auto",
+                                    borderRadius: "10px",
+                                    marginTop: "20px",
+                                }}
+                            >
+                                <source src={item.src} type="video/mp4"/>
+                                Your browser does not support the video tag.
+                            </video>
+                        ) : null}
                     </div>
                 ))}
             </div>
 
-            {/* Video Section */}
-            {project.type === "video" && project.fileName && (
-                <div>
-                    <video
-                        autoPlay
-                        loop
-                        muted
-                        style={{
-                            maxWidth: "90%", // Match the maxWidth of the images
-                            width: "100%",
-                            height: "auto",
-                            // marginTop: "5px",
-                            borderRadius: "10px", // Optional: Add rounded corners to match image styling
-                        }}
-                    >
-                        <source src={project.fileName} type="video/mp4" />
-                        Your browser does not support the video tag.
-                    </video>
-                </div>
-            )}
 
             {/* Navigation Arrows */}
             <div className="button-container">
