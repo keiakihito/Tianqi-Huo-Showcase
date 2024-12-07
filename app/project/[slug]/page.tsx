@@ -83,9 +83,9 @@ const ProjectDetail = ({ params }: { params: { slug: string } }) => {
                                 src={item.src}
                                 alt={item.header || `Media ${index + 1}`}
                                 style={{
-                                    width: "800px",
-                                    maxWidth: "90%",
+                                    maxWidth: "100%",
                                     height: "auto",
+                                    objectFit: "contain", // Avoid cropping
                                     borderRadius: "10px",
                                     marginTop: "20px",
                                 }}
@@ -96,9 +96,10 @@ const ProjectDetail = ({ params }: { params: { slug: string } }) => {
                                 loop
                                 muted
                                 style={{
-                                    maxWidth: "90%",
-                                    width: "100%",
+                                    maxWidth: "80%",
+                                    width: "auto",
                                     height: "auto",
+                                    objectFit: "contain", // Avoid cropping
                                     borderRadius: "10px",
                                     marginTop: "20px",
                                 }}

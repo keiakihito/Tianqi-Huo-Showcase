@@ -16,7 +16,7 @@ const ProjectList = () => {
                     {project.media?.[0]?.type === "image" && (
                         <div
                             style={{
-                                maxWidth: "90%",
+                                maxWidth: "80%",
                                 height: "auto",
                                 overflow: "hidden",
                                 margin: "0 auto 20px",
@@ -28,7 +28,7 @@ const ProjectList = () => {
                                 src={project.media[0].src}
                                 alt={`${project.title} Thumbnail`}
                                 style={{
-                                    maxWidth: "90%",
+                                    maxWidth: "80%",
                                     height: "auto",
                                     objectFit: "cover",
                                 }}
@@ -38,7 +38,7 @@ const ProjectList = () => {
                     {project.media?.[0]?.type === "video" && (
                         <div
                             style={{
-                                maxWidth: "90%",
+                                maxWidth: "80%",
                                 height: "auto",
                                 overflow: "hidden",
                                 margin: "0 auto 20px",

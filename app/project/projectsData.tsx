@@ -78,7 +78,7 @@ export const projects: Project[] = [
             { type: "image", src: "/images/project2/Huo_Tianqi_IxD755_Page_33.jpg", description: "" },
             { type: "image", src: "/images/project2/Huo_Tianqi_IxD755_Page_34.jpg", description: "" },
             { type: "image", src: "/images/project2/Taskit_IXD635_Project_Page_03.jpg", description: "" },
-            { type: "image", src: "/images/ project2/Taskit_IXD635_Project_Page_04.jpg", description: "" },
+            { type: "image", src: "/images/project2/Taskit_IXD635_Project_Page_04.jpg", description: "" },
             { type: "image", src: "/images/project2/Taskit_IXD635_Project_Page_05.jpg", description: "" },
             { type: "image", src: "/images/project2/Taskit_IXD635_Project_Page_06.jpg", description: "" },
             { type: "image", src: "/images/project2/Taskit_IXD635_Project_Page_07.jpg", description: "" },
@@ -87,7 +87,6 @@ export const projects: Project[] = [
             { type: "image", src: "/images/project2/Taskit_IXD635_Project_Page_10.jpg", description: "" },
             { type: "image", src: "/images/project2/Taskit_IXD635_Project_Page_11.jpg", description: "" },
             { type: "image", src: "/images/project2/Taskit_IXD635_Project_Page_12.jpg", description: "" },
-
         ],
         description: "Project 2 description.",
         slug: "taskit",
