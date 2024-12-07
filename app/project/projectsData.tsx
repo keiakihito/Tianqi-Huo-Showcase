@@ -62,7 +62,7 @@ export const projects: Project[] = [
             { type: "image", src: "/images/project1/Project1 Web_Page_19.jpg", header: "PROTOTYPE" },
             {
                 type: "video",
-                src: "/videos/AsMod4.2_Tianqi Huo.mp4",
+                src: "/videos/AsMod4.2_TianqiHuo.mp4",
                 header: "Video Demo",
                 description: "This is a video demonstration of EcoStitch.",
             },
