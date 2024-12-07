@@ -11,7 +11,7 @@ const About = () => {
                     <h1 style={{ textAlign: "center", marginBottom: "20px" }}>Resume</h1>
                     {/* Displaying the JPG version of the resume */}
                     <img
-                        src="/Resume_for_Website.jpg"
+                        src="/images/Resume_for_Website.jpg"
                         alt="Resume"
                         width="100%"
                         style={{ maxWidth: "800px", margin: "0 auto", display: "block" }}
