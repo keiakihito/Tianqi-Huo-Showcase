@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "postinstall": "git lfs install && git lfs pull"
+    "postinstall": "git lfs install && git lfs pull origin master"
   },
   "dependencies": {
     "@emotion/react": "^11.13.3",

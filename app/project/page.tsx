@@ -16,7 +16,7 @@ const ProjectList = () => {
                     {project.media?.[0]?.type === "image" && (
                         <div
                             style={{
-                                maxWidth: "90px",
+                                maxWidth: "90%",
                                 height: "auto",
                                 overflow: "hidden",
                                 margin: "0 auto 20px",
@@ -39,7 +39,7 @@ const ProjectList = () => {
                         <div
                             style={{
                                 maxWidth: "90%",
-                                height: "200px",
+                                height: "auto",
                                 overflow: "hidden",
                                 margin: "0 auto 20px",
                                 borderRadius: "10px",
