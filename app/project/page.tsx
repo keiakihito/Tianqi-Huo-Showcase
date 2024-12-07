@@ -6,7 +6,6 @@ const ProjectList = () => {
     return (
         <div className="main-content">
             <h1>Projects</h1>
-            <p>A collection of previous projects</p>
             {projects.map((project, index) => (
                 <div key={index} className="project-card">
                     <h2>{project.title}</h2>
@@ -16,19 +15,18 @@ const ProjectList = () => {
                     {project.media?.[0]?.type === "image" && (
                         <div
                             style={{
-                                maxWidth: "60%",
+                                maxWidth: "70%",
                                 height: "auto",
                                 overflow: "hidden",
                                 margin: "0 auto 20px",
                                 borderRadius: "10px",
-                                backgroundColor: "#f0f0f0",
                             }}
                         >
                             <img
                                 src={project.media[0].src}
                                 alt={`${project.title} Thumbnail`}
                                 style={{
-                                    maxWidth: "60%",
+                                    maxWidth: "70%",
                                     height: "auto",
                                     objectFit: "cover",
                                 }}
@@ -38,12 +36,11 @@ const ProjectList = () => {
                     {project.media?.[0]?.type === "video" && (
                         <div
                             style={{
-                                maxWidth: "60%",
+                                maxWidth: "70%",
                                 height: "auto",
                                 overflow: "hidden",
                                 margin: "0 auto 20px",
                                 borderRadius: "10px",
-                                backgroundColor: "#f0f0f0",
                             }}
                         >
                             <video

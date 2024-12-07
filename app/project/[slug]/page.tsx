@@ -26,7 +26,7 @@ const ProjectDetail = ({ params }: { params: { slug: string } }) => {
     return (
         <div style={{textAlign: "center"}}>
             <h1>{project.title}</h1>
-            {/*<p>{project.description}</p>*/}
+            <p>{project.description}</p>
 
             {/* Display Images with Headers, Descriptions, and Lists */}
             <div className="media-gallery">

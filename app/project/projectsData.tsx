@@ -36,7 +36,7 @@ export const projects: Project[] = [
                 type: "image",
                 src: "/images/project1/Project1 Web_Page_01.jpg",
                 header: "PROPOSAL ABSTRACT", // New field
-                description: "Description is here",
+                // description: "A digital app that connects users in need of professional clothing repair.",
                 list: [
                 "- List Item 1",
                 "- List Item 2",
@@ -67,7 +67,7 @@ export const projects: Project[] = [
                 description: "This is a video demonstration of EcoStitch.",
             },
         ],
-        description: "Project 1 description.",
+        description: "A digital app that connects users in need of professional clothing repair.",
         slug: "eco-stitch",
     },
 
