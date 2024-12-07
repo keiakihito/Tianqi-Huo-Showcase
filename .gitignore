@@ -1,8 +1,8 @@
 node_modules/
 node_modules/
 # Ignore all images files in the public/images directory
-public/images/
-public/videos
+#public/images/
+#public/videos
 
 # Ignore Next.js build artifacts
 .next/
