@@ -30,7 +30,7 @@ export type Project = {
 export const projects: Project[] = [
 
     { // Project 1
-        title: "EcoStitch",
+        title: "Project 01: EcoStitch",
         type: "project",
         cover: {
             type: "image",
@@ -67,9 +67,9 @@ export const projects: Project[] = [
             { type: "image", src: "/images/project1/Project1 Web_Page_19.jpg", header: "PROTOTYPE" },
             {
                 type: "video",
-                src: "/videos/AsMod4.2_TianqiHuo.mp4",
-                header: "Video Demo",
-                description: "This is a video demonstration of EcoStitch.",
+                src: "/videos/P1Prototype.mp4",
+                header: "Prototype Demo",
+                description: "This is a prototype demonstration of EcoStitch.",
             },
         ],
         description: "A digital app that connects users in need of professional clothing repair.",
@@ -77,7 +77,7 @@ export const projects: Project[] = [
     },
 
     { // Project 2
-        title: "TasKit",
+        title: "Project 02: TasKit",
         type: "project",
         cover: {
             type: "image",
@@ -101,7 +101,7 @@ export const projects: Project[] = [
         slug: "taskit",
     },
     {//Project 3
-        title: "The Ivy",
+        title: "Project 03: The Ivy",
         type: "project",
         cover: {
             type: "image",
@@ -140,7 +140,7 @@ export const projects: Project[] = [
         slug: "the-ivy",
     },
     {//Project 4
-        title: "Piggybank",
+        title: "Project 04: Piggybank",
         type: "project",
         cover: {
             type: "image",

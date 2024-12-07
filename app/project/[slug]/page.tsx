@@ -96,9 +96,9 @@ const ProjectDetail = ({ params }: { params: { slug: string } }) => {
                                 loop
                                 muted
                                 style={{
-                                    maxWidth: "80%",
-                                    width: "auto",
-                                    height: "auto",
+                                    maxWidth: "35%",
+                                    // width: "auto",
+                                    maxHeight: "auto",
                                     objectFit: "contain", // Avoid cropping
                                     borderRadius: "10px",
                                     marginTop: "20px",

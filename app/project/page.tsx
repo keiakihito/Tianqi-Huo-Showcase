@@ -8,7 +8,21 @@ const ProjectList = () => {
             <h1>Projects</h1>
             {projects.map((project, index) => (
                 <div key={index} className="project-card">
-                    <h2>{project.title}</h2>
+                    <h2
+                        style={{
+                            color:
+                                project.title === "Project 01: EcoStitch"
+                                    ? "#AE5532"
+                                    : project.title === "Project 02: TasKit"
+                                        ? "#8250A7"
+                                        : project.title === "Project 03: The Ivy"
+                                            ? "#446038"
+                                            : project.title === "Project 04: Piggybank"
+                                                ? "#D6B24E"
+                                                : "black", // Default color
+                        }}
+                    >
+                        {project.title}</h2>
                     <p>{project.description}</p>
 
                     {/* Render the cover */}
