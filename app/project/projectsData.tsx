@@ -20,6 +20,7 @@ export type Project = {
     // type: "image" | "youtube" | "video" | "pdf";
     // images?: ImageWithDescription[]; // Change this line
     type: "project";
+    cover: MediaItem; // Explicitly define the cover
     media: MediaItem[]; // Updated to use the new `MediaItem` array
     youtubeLink?: string;
     fileName?: string;
@@ -31,6 +32,10 @@ export const projects: Project[] = [
     { // Project 1
         title: "EcoStitch",
         type: "project",
+        cover: {
+            type: "image",
+            src: "/images/project1/cover.jpg"
+        },
         media: [
             {
                 type: "image",
@@ -74,6 +79,10 @@ export const projects: Project[] = [
     { // Project 2
         title: "TasKit",
         type: "project",
+        cover: {
+            type: "image",
+            src: "/images/project2/cover.jpg"
+        },
         media: [
             { type: "image", src: "/images/project2/Huo_Tianqi_IxD755_Page_33.jpg", description: "" },
             { type: "image", src: "/images/project2/Huo_Tianqi_IxD755_Page_34.jpg", description: "" },
@@ -94,6 +103,10 @@ export const projects: Project[] = [
     {//Project 3
         title: "The Ivy",
         type: "project",
+        cover: {
+            type: "image",
+            src: "/images/project3/cover.jpg"
+        },
         media: [
             { type: "image", src: "/images/project3/The_IVY_WNM605_Page_01.jpg", description: "" },
             { type: "image", src: "/images/project3/The_IVY_WNM605_Page_02.jpg", description: "" },
@@ -129,6 +142,10 @@ export const projects: Project[] = [
     {//Project 4
         title: "Piggybank",
         type: "project",
+        cover: {
+            type: "image",
+            src: "/images/project4/cover.jpg"
+        },
         media: [
             { type: "image", src: "/images/project4/Huo_Tianqi_IxD755_Page_37.jpg", description: "" },
             { type: "image", src: "/images/project4/Huo_Tianqi_IxD755_Page_38.jpg", description: "" },

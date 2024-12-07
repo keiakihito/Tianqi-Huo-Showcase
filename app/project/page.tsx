@@ -11,52 +11,18 @@ const ProjectList = () => {
                     <h2>{project.title}</h2>
                     <p>{project.description}</p>
 
-                    {/* Render Thumbnail Based on First Media Item */}
-                    {project.media?.[0]?.type === "image" && (
-                        <div
+                    {/* Render the cover */}
+                    {project.cover.type === "image" && (
+                        <img
+                            src={project.cover.src}
+                            alt={`${project.title} Cover`}
                             style={{
-                                maxWidth: "70%",
+                                width: "60%",
                                 height: "auto",
-                                overflow: "hidden",
-                                margin: "0 auto 20px",
                                 borderRadius: "10px",
+                                margin: "20px 0",
                             }}
-                        >
-                            <img
-                                src={project.media[0].src}
-                                alt={`${project.title} Thumbnail`}
-                                style={{
-                                    maxWidth: "70%",
-                                    height: "auto",
-                                    objectFit: "cover",
-                                }}
-                            />
-                        </div>
-                    )}
-                    {project.media?.[0]?.type === "video" && (
-                        <div
-                            style={{
-                                maxWidth: "70%",
-                                height: "auto",
-                                overflow: "hidden",
-                                margin: "0 auto 20px",
-                                borderRadius: "10px",
-                            }}
-                        >
-                            <video
-                                autoPlay
-                                loop
-                                muted
-                                style={{
-                                    width: "100%",
-                                    height: "100%",
-                                    objectFit: "cover",
-                                }}
-                            >
-                                <source src={project.media[0].src} type="video/mp4" />
-                                Your browser does not support the video tag.
-                            </video>
-                        </div>
+                        />
                     )}
 
                     {/* Link Button */}
