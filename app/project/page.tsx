@@ -1,6 +1,6 @@
 import Button from "@mui/material/Button";
 import Link from "next/link";
-import { projects, Project } from "./projectsData";
+import { projects } from "./projectsData";
 
 const ProjectList = () => {
     return (
@@ -14,34 +14,52 @@ const ProjectList = () => {
 
                     {/* Render Thumbnail Based on First Media Item */}
                     {project.media?.[0]?.type === "image" && (
-                        <img
-                            src={project.media[0].src}
-                            alt={`${project.title} Thumbnail`}
-                            className="thumbnail"
+                        <div
                             style={{
-                                maxWidth: "90%", // Set the thumbnail size
+                                maxWidth: "90px",
                                 height: "auto",
+                                overflow: "hidden",
+                                margin: "0 auto 20px",
                                 borderRadius: "10px",
-                                marginBottom: "20px",
-                            }}
-                        />
-                    )}
-                    {project.media?.[0]?.type === "video" && (
-                        <video
-                            className="thumbnail"
-                            autoPlay
-                            loop
-                            muted
-                            style={{
-                                maxWidth: "90%", // Set the thumbnail size
-                                height: "auto",
-                                borderRadius: "10px",
-                                marginBottom: "20px",
+                                backgroundColor: "#f0f0f0",
                             }}
                         >
-                            <source src={project.media[0].src} type="video/mp4" />
-                            Your browser does not support the video tag.
-                        </video>
+                            <img
+                                src={project.media[0].src}
+                                alt={`${project.title} Thumbnail`}
+                                style={{
+                                    maxWidth: "90%",
+                                    height: "auto",
+                                    objectFit: "cover",
+                                }}
+                            />
+                        </div>
+                    )}
+                    {project.media?.[0]?.type === "video" && (
+                        <div
+                            style={{
+                                maxWidth: "90%",
+                                height: "200px",
+                                overflow: "hidden",
+                                margin: "0 auto 20px",
+                                borderRadius: "10px",
+                                backgroundColor: "#f0f0f0",
+                            }}
+                        >
+                            <video
+                                autoPlay
+                                loop
+                                muted
+                                style={{
+                                    width: "100%",
+                                    height: "100%",
+                                    objectFit: "cover",
+                                }}
+                            >
+                                <source src={project.media[0].src} type="video/mp4" />
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
                     )}
 
                     {/* Link Button */}
