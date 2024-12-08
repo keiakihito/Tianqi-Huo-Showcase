@@ -30,7 +30,7 @@ export type Project = {
 export const projects: Project[] = [
 
     { // Project 1
-        title: "Project 01: EcoStitch",
+        title: "Project 1: EcoStitch",
         type: "project",
         cover: {
             type: "image",
@@ -77,31 +77,29 @@ export const projects: Project[] = [
     },
 
     { // Project 2
-        title: "Project 02: TasKit",
+        title: "Project 2: TasKit",
         type: "project",
         cover: {
             type: "image",
             src: "/images/project2/cover.jpg"
         },
         media: [
-            { type: "image", src: "/images/project2/Huo_Tianqi_IxD755_Page_33.jpg", description: "" },
-            { type: "image", src: "/images/project2/Huo_Tianqi_IxD755_Page_34.jpg", description: "" },
-            { type: "image", src: "/images/project2/Taskit_IXD635_Project_Page_03.jpg", description: "" },
-            { type: "image", src: "/images/project2/Taskit_IXD635_Project_Page_04.jpg", description: "" },
-            { type: "image", src: "/images/project2/Taskit_IXD635_Project_Page_05.jpg", description: "" },
-            { type: "image", src: "/images/project2/Taskit_IXD635_Project_Page_06.jpg", description: "" },
-            { type: "image", src: "/images/project2/Taskit_IXD635_Project_Page_07.jpg", description: "" },
-            { type: "image", src: "/images/project2/Taskit_IXD635_Project_Page_08.jpg", description: "" },
-            { type: "image", src: "/images/project2/Taskit_IXD635_Project_Page_09.jpg", description: "" },
-            { type: "image", src: "/images/project2/Taskit_IXD635_Project_Page_10.jpg", description: "" },
-            { type: "image", src: "/images/project2/Taskit_IXD635_Project_Page_11.jpg", description: "" },
-            { type: "image", src: "/images/project2/Taskit_IXD635_Project_Page_12.jpg", description: "" },
+            { type: "image", src: "/images/project2/Project2 Web_Page_1.jpg", header: "BACKGROUND RESEARCH" },
+            { type: "image", src: "/images/project2/Project2 Web_Page_2.jpg" },
+            { type: "image", src: "/images/project2/Project2 Web_Page_3.jpg", header: "PERSONA" },
+            { type: "image", src: "/images/project2/Project2 Web_Page_4.jpg", header: "SKETCH" },
+            { type: "image", src: "/images/project2/Project2 Web_Page_5.jpg", header: "MOOD BOARD" },
+            { type: "image", src: "/images/project2/Project2 Web_Page_6.jpg", header: "STYLE GUIDE" },
+            { type: "image", src: "/images/project2/Project2 Web_Page_7.jpg", header: "LOW-FIDELITY WIREFRAMES" },
+            { type: "image", src: "/images/project2/Project2 Web_Page_8.jpg", header: "MID-FIDELITY WIREFRAMES" },
+            { type: "image", src: "/images/project2/Project2 Web_Page_9.jpg", header: "HIGH-FIDELITY WIREFRAMES" },
+            { type: "image", src: "/images/project2/Project2 Web_Page_10.jpg", header: "MOCKUP" }
         ],
-        description: "Project 2 description.",
+        description: "Dashboard design for remote worker’s task management.",
         slug: "taskit",
     },
     {//Project 3
-        title: "Project 03: The Ivy",
+        title: "Project 3: The Ivy",
         type: "project",
         cover: {
             type: "image",
@@ -136,11 +134,11 @@ export const projects: Project[] = [
             { type: "image", src: "/images/project3/The_IVY_WNM605_Page_35.jpg", description: "" },
             { type: "image", src: "/images/project3/The_IVY_WNM605_Page_36.jpg", description: "" },
         ],
-        description: "Project 3 description.",
+        description: "A branding redesign project for The Ivy restaurant..",
         slug: "the-ivy",
     },
     {//Project 4
-        title: "Project 04: Piggybank",
+        title: "Project 4: Piggybank",
         type: "project",
         cover: {
             type: "image",
@@ -170,7 +168,7 @@ export const projects: Project[] = [
             { type: "image", src: "/images/project4/Piggybank_Tianqi_Huo_Page_88.jpg", description: "" },
             { type: "image", src: "/images/project4/Piggybank_Tianqi_Huo_Page_94.jpg", description: "" },
         ],
-        description: "Project 4 description",
+        description: "An expense and income tracking app design",
         slug: "piggybank",
     },
 ];

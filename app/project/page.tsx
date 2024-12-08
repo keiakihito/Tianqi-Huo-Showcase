@@ -11,13 +11,13 @@ const ProjectList = () => {
                     <h2
                         style={{
                             color:
-                                project.title === "Project 01: EcoStitch"
+                                project.title === "Project 1: EcoStitch"
                                     ? "#AE5532"
-                                    : project.title === "Project 02: TasKit"
+                                    : project.title === "Project 2: TasKit"
                                         ? "#8250A7"
-                                        : project.title === "Project 03: The Ivy"
+                                        : project.title === "Project 3: The Ivy"
                                             ? "#446038"
-                                            : project.title === "Project 04: Piggybank"
+                                            : project.title === "Project 4: Piggybank"
                                                 ? "#D6B24E"
                                                 : "black", // Default color
                         }}
