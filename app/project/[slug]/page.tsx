@@ -40,6 +40,7 @@ const ProjectDetail = ({ params }: { params: { slug: string } }) => {
                                     fontWeight: "bold",
                                     color: "#A54f25",
                                     marginBottom: "10px",
+                                    marginTop: "100px", // Add this line for space above the header
                                 }}
                             >
                                 {item.header}

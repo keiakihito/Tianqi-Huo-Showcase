@@ -21,23 +21,21 @@ const Index = () => {
                   <h3>UI / UX Designer</h3>
               </div>
           </div>
-          <div className="container">
+          <div className="profile">
               <div className="profile">
                   <div>
-                      <h2>UI / UX Designer</h2>
-                      <p>Crafting exceptional quality through meticulous detail, I elevate product design to deliver unparalleled value and aesthetics. As a skilled professional residing in Los Angeles, I am currently seeking a product design related job, equipped with a strong foundation in user-centered design methods, wireframing, prototyping, and usability testing.</p>
+                      <Image className="profileImage" src={profilePic} alt="hero"/>
                   </div>
-                  <div>
-                      <Image src={profilePic} alt="hero" />
-                  </div>
-              </div>
-              <div className="skills">
-                  <h2>Skills</h2>
-                  <div className="skillsContainer">
-                      {/*<div><img src="/images/javascript.svg" alt="javascript"/><span>JavaScript / 10 years</span></div>*/}
-                      {/*<div><img src="/images/react.svg"alt="react"/><span>React / 5 years</span></div>*/}
-                      {/*<div><img src="/images/gatsby.svg" alt="gatsby"/><span>Gatsby / 3 years</span></div>*/}
-                      {/*<div><img src="/images/next.svg" alt="next"/><span>Next.JS / 3 years</span></div>*/}
+                  <div className="profileText">
+                      <h2 className = "helloText">Hello, </h2>
+                      <p>I am Tianqi Huo, residing in Los Angeles. I am a life lover, food lover, and fashion lover. I
+                          enjoy the little things in life and am good at discovering small joys and happiness around me.<br/>
+                          <br/>After earning a bachelor’s degree in Fashion Design from the Academy of Art University, I have
+                          worked as a fashion designer for the past few years. Driven by my passion for product design,
+                          I am now pursuing a master’s degree in UI/UX design and will graduate this December.<br/>
+                          <br/>My current aspiration is to transition into the dynamic field of product design, leveraging my
+                          creativity and technical expertise to deliver impactful solutions.
+                      </p>
                   </div>
               </div>
               <div className="ctaButton">

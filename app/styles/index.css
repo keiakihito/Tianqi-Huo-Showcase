@@ -1,5 +1,5 @@
 .hero {
-    text-align: center; 
+    text-align: center;
     position: relative;
 }
 
@@ -20,94 +20,159 @@
     border-radius: 5px;
 }
 
-.textContainer > h1 {
-    font-size: 5rem;
-}
- 
-.profile {
-    padding: 8rem 0;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-items: center;
-    align-items: center;
-    grid-column-gap: 5rem;
-    grid-auto-flow: dense;
+/*.textContainer > h1 {*/
+/*    font-size: 5rem;*/
+/*}*/
+/* */
+/*.profile {*/
+/*    padding: 8rem 0;*/
+/*    display: grid;*/
+/*    grid-template-columns: 1fr 1fr;*/
+/*    justify-items: center;*/
+/*    align-items: center;*/
+/*    grid-column-gap: 5rem;*/
+/*    grid-auto-flow: dense;*/
+/*}*/
+
+/*.profile > * > p {*/
+/*    margin-bottom: 0;*/
+/*}*/
+
+/*.profile > * > img {*/
+/*    width: 100%;*/
+/*    max-height: 450px;*/
+/*    object-fit: cover;*/
+/*}*/
+
+/*.skills { */
+/*    padding: 0 0 10rem;*/
+/*}*/
+
+/*.skills > h2 {*/
+/*    text-align: center;*/
+/*    margin-bottom: 7rem;*/
+/*}*/
+
+/*.skills > .skillsContainer {*/
+/*    display: grid;*/
+/*    grid-template-columns: 1fr 1fr;*/
+/*    justify-items: start;*/
+/*    align-items: center;*/
+/*    grid-row-gap: 3rem;*/
+/*}*/
+
+/*.skills > .skillsContainer > div {*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    gap: 1rem;*/
+/*    font-weight: 500;*/
+/*}*/
+
+/*.skills > .skillsContainer > * > img {*/
+/*    width: 100px;*/
+/*}*/
+
+/*.ctaButton {*/
+/*    padding: 0 0 10rem;*/
+/*    text-align: center;*/
+/*}*/
+
+/*.ctaButton > a {*/
+/*    display: inline-block;*/
+/*    margin: 10rem 0;*/
+/*    padding: 1.3rem 6rem;*/
+/*    background-color: #A54f25;*/
+/*    border-radius: 25px; */
+/*    color: #fff;*/
+/*}*/
+
+/*.ctaButton > a:hover {*/
+/*    opacity: 0.8;*/
+/*}*/
+
+/*!* Media Queries *!*/
+/*@media(max-width: 540px) { */
+/*    .textContainer {*/
+/*        width: 80%;*/
+/*        padding: 1.5rem 1rem 3rem;*/
+/*    }*/
+
+/*    .profile {*/
+/*        padding: 5rem 0;*/
+/*        grid-template-columns: 1fr;*/
+/*        grid-row-gap: 3rem;*/
+/*    }*/
+
+/*    .skills > .skillsContainer {*/
+/*        grid-template-columns: 1fr */
+/*    }*/
+/*    */
+/*    .skills > h2 {*/
+/*        margin-bottom: 3rem;*/
+/*    }*/
+/*}*/
+
+
+.hero {
+    text-align: center;
+    position: relative;
 }
 
-.profile > * > p {
-    margin-bottom: 0;
-}
-
-.profile > * > img {
-    width: 100%;
-    max-height: 450px;
+.hero > img {
+    width: 90%; /* Restricting max width to 90% */
+    height: auto; /* Keeping auto height for aspect ratio */
+    margin: 0 auto; /* Center the image horizontally */
     object-fit: cover;
 }
 
-.skills { 
-    padding: 0 0 10rem;
-}
-
-.skills > h2 {
-    text-align: center;
-    margin-bottom: 7rem;
-}
-
-.skills > .skillsContainer {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-items: start;
-    align-items: center;
-    grid-row-gap: 3rem;
-}
-
-.skills > .skillsContainer > div {
+.profile {
     display: flex;
-    align-items: center;
-    gap: 1rem;
-    font-weight: 500;
+    flex-direction: column;
+    align-items: center; /* Center-align elements in the profile */
+    padding: 2rem;
+    text-align: left; /* Change text alignment to left */
+    width: 90%; /* Restricting max width to 90% */
+    margin: 0 auto; /* Center the profile section */
 }
 
-.skills > .skillsContainer > * > img {
-    width: 100px;
+.profileImage {
+    maxWidth: 90%; /* Restricting image to 90% of container width */
+    maxHeight: auto;
+    object-fit: contain;
+    margin-bottom: 2rem;
 }
 
-.ctaButton {
-    padding: 0 0 10rem;
-    text-align: center;
+.profileText {
+    max-width: 90%; /* Restricting text width to 90% */
+    margin: 0 auto; /* Center text container horizontally */
+    text-align: left; /* Align text to the left */
+    font-size: 1.5rem; /* Increase the overall font size */
+    line-height: 1.8; /* Improve readability with better line height */
 }
 
-.ctaButton > a {
-    display: inline-block;
-    margin: 10rem 0;
-    padding: 1.3rem 6rem;
-    background-color: #A54f25;
-    border-radius: 25px; 
-    color: #fff;
+.helloText {
+    font-size: 5rem;
+    font-weight: bold;
+    color: #A54f25;
+    margin-bottom: 1rem;
 }
 
-.ctaButton > a:hover {
-    opacity: 0.8;
+.profileText > p {
+    line-height: 1.5;
+    font-size: 2.5rem;
 }
 
 /* Media Queries */
-@media(max-width: 540px) { 
-    .textContainer {
-        width: 80%;
-        padding: 1.5rem 1rem 3rem;
-    }
-
+@media(max-width: 540px) {
     .profile {
-        padding: 5rem 0;
-        grid-template-columns: 1fr;
-        grid-row-gap: 3rem;
+        padding: 1rem;
     }
 
-    .skills > .skillsContainer {
-        grid-template-columns: 1fr 
+    .helloText {
+        font-size: 1.5rem;
     }
-    
-    .skills > h2 {
-        margin-bottom: 3rem;
+
+    .profileImage {
+        max-height: 400px;
     }
 }

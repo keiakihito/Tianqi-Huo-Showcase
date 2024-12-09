@@ -42,11 +42,12 @@ export const projects: Project[] = [
                 src: "/images/project1/Project1 Web_Page_01.jpg",
                 header: "PROPOSAL ABSTRACT", // New field
                 // description: "A digital app that connects users in need of professional clothing repair.",
-                list: [
-                "- List Item 1",
-                "- List Item 2",
-                "- List Item 3",
-            ] },// New list of strings
+                //     list: [
+                //     "",
+                //     "",
+                //     "",
+                // ] ,// New list of strings
+            },
             { type: "image", src: "/images/project1/Project1 Web_Page_02.jpg", description: "" },
             { type: "image", src: "/images/project1/Project1 Web_Page_03.jpg", description: "" },
             { type: "image", src: "/images/project1/Project1 Web_Page_04.jpg", description: "" },
@@ -134,11 +135,11 @@ export const projects: Project[] = [
             { type: "image", src: "/images/project3/The_IVY_WNM605_Page_35.jpg", description: "" },
             { type: "image", src: "/images/project3/The_IVY_WNM605_Page_36.jpg", description: "" },
         ],
-        description: "A branding redesign project for The Ivy restaurant..",
+        description: "A branding redesign project for The Ivy restaurant.",
         slug: "the-ivy",
     },
     {//Project 4
-        title: "Project 4: Piggybank",
+        title: "Project 4: Piggy Bank",
         type: "project",
         cover: {
             type: "image",
@@ -169,6 +170,46 @@ export const projects: Project[] = [
             { type: "image", src: "/images/project4/Piggybank_Tianqi_Huo_Page_94.jpg", description: "" },
         ],
         description: "An expense and income tracking app design",
-        slug: "piggybank",
+        slug: "Piggy Bank",
+    },
+    { // Project 5
+        title: "Project 5: Brand Identity",
+        type: "project",
+        cover: {
+            type: "image",
+            src: "/images/project5/cover.jpg"
+        },
+        media: [
+            {
+                type: "image",
+                src: "/images/project5/cover.jpg",
+                header: "PROPOSAL ABSTRACT", // New field
+            },// New list of strings
+            { type: "image", src: "/images/project5/Tianqi Huo_Branding_Page_03.jpg", description: "" },
+            { type: "image", src: "/images/project5/Tianqi Huo_Branding_Page_04.jpg", description: "" },
+            { type: "image", src: "/images/project5/Tianqi Huo_Branding_Page_05.jpg", description: "" },
+            { type: "image", src: "/images/project5/Tianqi Huo_Branding_Page_06.jpg", description: "" },
+            { type: "image", src: "/images/project5/Tianqi Huo_Branding_Page_07.jpg", description: "" },
+            { type: "image", src: "/images/project5/Tianqi Huo_Branding_Page_08.jpg", header: "" },
+            { type: "image", src: "/images/project5/Tianqi Huo_Branding_Page_09.jpg", header: "" },
+            { type: "image", src: "/images/project5/Tianqi Huo_Branding_Page_10.jpg", header: "" },
+            { type: "image",  src: "/images/project5/Tianqi Huo_Branding_Page_11.jpg", description: "" },
+            { type: "image", src: "/images/project5/Tianqi Huo_Branding_Page_12.jpg", header: "" },
+            { type: "image", src: "/images/project5/Tianqi Huo_Branding_Page_13.jpg", header: "" },
+            { type: "image", src: "/images/project5/Tianqi Huo_Branding_Page_14.jpg", header: "" },
+            { type: "image", src: "/images/project5/Tianqi Huo_Branding_Page_15.jpg", header: "" },
+            { type: "image", src: "/images/project5/Tianqi Huo_Branding_Page_16.jpg", header: "" },
+            { type: "image", src: "/images/project5/Tianqi Huo_Branding_Page_17.jpg", header: "" },
+            { type: "image", src: "/images/project5/Tianqi Huo_Branding_Page_18.jpg", description: "" },
+
+            // {
+            //     type: "video",
+            //     src: "/videos/P1Prototype.mp4",
+            //     header: "Prototype Demo",
+            //     description: "This is a prototype demonstration of EcoStitch.",
+            // },
+        ],
+        description: "This is a personal brand identity package that showcases the story behind my brand and how each visual element helps me to define it.",
+        slug: "brand-identity",
     },
 ];

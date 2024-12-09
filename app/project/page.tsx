@@ -17,9 +17,11 @@ const ProjectList = () => {
                                         ? "#8250A7"
                                         : project.title === "Project 3: The Ivy"
                                             ? "#446038"
-                                            : project.title === "Project 4: Piggybank"
+                                            : project.title === "Project 4: Piggy Bank"
                                                 ? "#D6B24E"
-                                                : "black", // Default color
+                                                : project.title === "Project 5: Brand Identity"
+                                                    ? "#B46B3E"
+                                                        : "black", // Default color
                         }}
                     >
                         {project.title}</h2>
