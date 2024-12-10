@@ -117,10 +117,10 @@ const ProjectDetail = ({ params }: { params: { slug: string } }) => {
             {/* Navigation Arrows */}
             <div className="button-container">
                 <Link href={`/project/${prevProject.slug}`} passHref>
-                    <button className="view-button">⬅️ Previous Project</button>
+                    <button className="view-button">⬅️ Previous </button>
                 </Link>
                 <Link href={`/project/${nextProject.slug}`} passHref>
-                    <button className="view-button">Next Project ➡️</button>
+                    <button className="view-button">Next  ➡️</button>
                 </Link>
             </div>
         </div>

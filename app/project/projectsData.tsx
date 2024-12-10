@@ -137,8 +137,6 @@ export const projects: Project[] = [
             src: "/images/project4/cover.jpg"
         },
         media: [
-            { type: "image", src: "/images/project4/Huo_Tianqi_IxD755_Page_37.jpg", description: "" },
-            { type: "image", src: "/images/project4/Huo_Tianqi_IxD755_Page_38.jpg", description: "" },
             { type: "image", src: "/images/project4/Piggybank_Tianqi_Huo_Page_04.jpg", description: "" },
             { type: "image", src: "/images/project4/Piggybank_Tianqi_Huo_Page_05.jpg", description: "" },
             { type: "image", src: "/images/project4/Piggybank_Tianqi_Huo_Page_11.jpg", description: "" },
