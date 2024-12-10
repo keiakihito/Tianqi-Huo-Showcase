@@ -120,6 +120,11 @@ export const projects: Project[] = [
             { type: "image", src: "/images/project3/Project3 Web_Page_11.jpg", header: "" },
             { type: "image", src: "/images/project3/Project3 Web_Page_12.jpg", header: "IDENTITY DESIGN" },
             { type: "image", src: "/images/project3/Project3 Web_Page_13.jpg", header: "VISUAL DESIGN & MOCKUP" },
+            { type: "image", src: "/images/project3/The Ivy Web 1.png", header: "HIGH-FIDELITY WIREFRAMES" },
+            { type: "image", src: "/images/project3/The Ivy Web 2.png", header: "" },
+            { type: "image", src: "/images/project3/The Ivy Web 3.png", header: "" },
+            { type: "image", src: "/images/project3/The Ivy Web 4.png", header: "" },
+
         ],
         description: "A branding redesign project for The Ivy restaurant.",
         slug: "the-ivy",
