@@ -45,7 +45,7 @@ const ProjectList = () => {
                             />
                         </Link>
                     )}
-                    
+
                     {/*/!* Link Button *!/*/}
                     {/*<div className="center-button-container">*/}
                     {/*    <Link href={`/project/${project.slug}`} passHref>*/}
