@@ -46,14 +46,14 @@ const ProjectList = () => {
                         </Link>
                     )}
 
-                    {/*/!* Link Button *!/*/}
-                    {/*<div className="center-button-container">*/}
-                    {/*    <Link href={`/project/${project.slug}`} passHref>*/}
-                    {/*        <Button variant="contained" className="center-view-button">*/}
-                    {/*            Project Details*/}
-                    {/*        </Button>*/}
-                    {/*    </Link>*/}
-                    {/*</div>*/}
+                    {/* Link Button */}
+                    <div className="center-button-container">
+                        <Link href={`/project/${project.slug}`} passHref>
+                            <Button variant="contained" className="center-view-button">
+                                Project Details
+                            </Button>
+                        </Link>
+                    </div>
                 </div>
             ))}
         </div>
