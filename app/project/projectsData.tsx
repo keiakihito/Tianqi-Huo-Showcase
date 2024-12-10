@@ -171,11 +171,6 @@ export const projects: Project[] = [
             src: "/images/project5/cover.jpg"
         },
         media: [
-            {
-                type: "image",
-                src: "/images/project5/cover.jpg",
-                header: "PROPOSAL ABSTRACT", // New field
-            },// New list of strings
             { type: "image", src: "/images/project5/Tianqi Huo_Branding_Page_03.jpg", description: "" },
             { type: "image", src: "/images/project5/Tianqi Huo_Branding_Page_04.jpg", description: "" },
             { type: "image", src: "/images/project5/Tianqi Huo_Branding_Page_05.jpg", description: "" },
