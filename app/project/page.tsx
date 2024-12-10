@@ -21,34 +21,39 @@ const ProjectList = () => {
                                                 ? "#D6B24E"
                                                 : project.title === "Project 5: Brand Identity"
                                                     ? "#B46B3E"
-                                                        : "black", // Default color
+                                                    : "black", // Default color
                         }}
                     >
-                        {project.title}</h2>
+                        {project.title}
+                    </h2>
                     <p>{project.description}</p>
 
-                    {/* Render the cover */}
-                    {project.cover.type === "image" && (
-                        <img
-                            src={project.cover.src}
-                            alt={`${project.title} Cover`}
-                            style={{
-                                width: "60%",
-                                height: "auto",
-                                borderRadius: "10px",
-                                margin: "20px 0",
-                            }}
-                        />
-                    )}
 
-                    {/* Link Button */}
-                    <div className="center-button-container">
-                        <Link href={`/project/${project.slug}`} passHref>
-                            <Button variant="contained" className="center-view-button">
-                                Project Details
-                            </Button>
+                    {/* Make the cover image clickable */}
+                    {project.cover.type === "image" && (
+                        <Link href={`/project/${project.slug}`}>
+                            <img
+                                src={project.cover.src}
+                                alt={`${project.title} Cover`}
+                                style={{
+                                    width: "60%",
+                                    height: "auto",
+                                    borderRadius: "10px",
+                                    margin: "20px 0",
+                                    cursor: "pointer", // Add pointer cursor for better UX
+                                }}
+                            />
                         </Link>
-                    </div>
+                    )}
+                    
+                    {/*/!* Link Button *!/*/}
+                    {/*<div className="center-button-container">*/}
+                    {/*    <Link href={`/project/${project.slug}`} passHref>*/}
+                    {/*        <Button variant="contained" className="center-view-button">*/}
+                    {/*            Project Details*/}
+                    {/*        </Button>*/}
+                    {/*    </Link>*/}
+                    {/*</div>*/}
                 </div>
             ))}
         </div>
