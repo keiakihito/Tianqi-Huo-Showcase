@@ -2,6 +2,13 @@ import Button from "@mui/material/Button";
 import Link from "next/link";
 import { projects } from "./projectsData";
 
+
+
+const SMALL_COVERS = [
+    "/images/project5/cover.jpg",
+];
+
+
 const ProjectList = () => {
     return (
         <div className="main-content">
@@ -36,11 +43,13 @@ const ProjectList = () => {
                                 src={project.cover.src}
                                 alt={`${project.title} Cover`}
                                 style={{
-                                    width: "60%",
+                                    width: SMALL_COVERS.includes(project.cover.src)
+                                        ? "50%" // Smaller size for specific covers
+                                        : "90%", // Default size for other covers
                                     height: "auto",
+                                    objectFit: "contain", // Avoid cropping
                                     borderRadius: "10px",
-                                    margin: "20px 0",
-                                    cursor: "pointer", // Add pointer cursor for better UX
+                                    marginBottom: "20px",
                                 }}
                             />
                         </Link>

@@ -2,6 +2,13 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { projects } from "../projectsData";
 
+const SMALL_IMAGES = [
+    "/images/project1/Project1 Web_Page_16.jpg",
+    "/images/project1/Project1 Web_Page_17.jpg",
+    "/images/project1/Project1 Web_Page_18.jpg",
+];
+
+
 export async function generateStaticParams() {
     return projects.map((project) => ({
         slug: project.slug,
@@ -84,7 +91,9 @@ const ProjectDetail = ({ params }: { params: { slug: string } }) => {
                                 src={item.src}
                                 alt={item.header || `Media ${index + 1}`}
                                 style={{
-                                    maxWidth: "100%",
+                                    maxWidth: SMALL_IMAGES.includes(item.src)
+                                        ? "70%" // Smaller size for specific images
+                                        : "100%", // Default size for other images
                                     height: "auto",
                                     objectFit: "contain", // Avoid cropping
                                     borderRadius: "10px",
