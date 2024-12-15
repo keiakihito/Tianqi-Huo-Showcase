@@ -47,11 +47,11 @@ const ProjectList = () => {
                                 src={project.cover.src}
                                 alt={`${project.title} Cover`}
                                 style={{
-                                    width: SMALL_COVERS.includes(project.cover.src)
+                                    width: project.cover.src && SMALL_COVERS.includes(project.cover.src)
                                         ? "50%" // Smaller size for specific covers
-                                            : MEDIUM_COVERS.includes(project.cover.src)
-                                            ? "65%" // Smaller size for specific covers
-                                                : "80%", // Default size for other covers
+                                        : MEDIUM_COVERS.includes(project.cover.src ?? "") // Fallback to an empty string if undefined
+                                            ? "65%" // Medium size for specific covers
+                                            : "100%", // Default size
                                     height: "auto",
                                     objectFit: "contain", // Avoid cropping
                                     borderRadius: "10px",
