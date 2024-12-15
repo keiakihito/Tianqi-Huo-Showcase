@@ -68,7 +68,7 @@ const ProjectDetail = ({ params }: { params: { slug: string } }) => {
                             >
                                 <p
                                     style={{
-                                        fontSize: "18px", // Slightly larger font
+                                        fontSize: "25px", // Slightly larger font
                                         lineHeight: "1.6", // Improve readability with better line spacing
                                         color: "#4A4A4A", // A slightly muted color for text
                                         fontWeight: "400", // Regular font weight for body text
@@ -81,7 +81,7 @@ const ProjectDetail = ({ params }: { params: { slug: string } }) => {
                                 {item.highlight && (
                                     <p
                                         style={{
-                                            fontSize: "20px", // Larger font for emphasis
+                                            fontSize: "25px", // Larger font for emphasis
                                             fontWeight: "bold", // Bold for emphasis
                                             color: "#A54f25", // Match the theme color
                                             // marginBottom: "15px",

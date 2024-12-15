@@ -6,6 +6,7 @@ import { projects } from "./projectsData";
 const MEDIUM_COVERS = [
     "/images/project1/cover.jpg",
     "/images/project3/cover.jpg",
+    "/images/project4/cover.jpg",
 ];
 
 const SMALL_COVERS = [
@@ -50,7 +51,7 @@ const ProjectList = () => {
                                     width: project.cover.src && SMALL_COVERS.includes(project.cover.src)
                                         ? "50%" // Smaller size for specific covers
                                         : MEDIUM_COVERS.includes(project.cover.src ?? "") // Fallback to an empty string if undefined
-                                            ? "65%" // Medium size for specific covers
+                                            ? "60%" // Medium size for specific covers
                                             : "100%", // Default size
                                     height: "auto",
                                     objectFit: "contain", // Avoid cropping
