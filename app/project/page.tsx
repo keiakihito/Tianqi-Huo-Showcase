@@ -3,6 +3,10 @@ import Link from "next/link";
 import { projects } from "./projectsData";
 
 
+const MEDIUM_COVERS = [
+    "/images/project1/cover.jpg",
+    "/images/project3/cover.jpg",
+];
 
 const SMALL_COVERS = [
     "/images/project5/cover.jpg",
@@ -45,7 +49,9 @@ const ProjectList = () => {
                                 style={{
                                     width: SMALL_COVERS.includes(project.cover.src)
                                         ? "50%" // Smaller size for specific covers
-                                        : "90%", // Default size for other covers
+                                            : MEDIUM_COVERS.includes(project.cover.src)
+                                            ? "65%" // Smaller size for specific covers
+                                                : "80%", // Default size for other covers
                                     height: "auto",
                                     objectFit: "contain", // Avoid cropping
                                     borderRadius: "10px",

@@ -1,6 +1,8 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { projects } from "../projectsData";
+import { Worker, Viewer } from "@react-pdf-viewer/core";
+import "@react-pdf-viewer/core/lib/styles/index.css";
 
 const SMALL_IMAGES = [
     "/images/project1/Project1 Web_Page_16.jpg",
@@ -56,23 +58,47 @@ const ProjectDetail = ({ params }: { params: { slug: string } }) => {
 
                         {/* Description */}
                         {item.description && (
-                            <p
+                            <div
                                 style={{
-                                    fontSize: "16px",
-                                    color: "#333",
-                                    marginBottom: "10px",
+                                    textAlign: "center",
+                                    margin: "20px auto",
+                                    padding: "10px 20px",
+                                    maxWidth: "800px", // Limit width for better readability
                                 }}
                             >
-                                {item.description}
-                            </p>
+                                <p
+                                    style={{
+                                        fontSize: "18px", // Slightly larger font
+                                        lineHeight: "1.6", // Improve readability with better line spacing
+                                        color: "#4A4A4A", // A slightly muted color for text
+                                        fontWeight: "400", // Regular font weight for body text
+                                        // marginBottom: "20px",
+                                    }}
+                                >
+                                    {item.description}
+                                </p>
+                                {/* Additional Highlighted Text */}
+                                {item.highlight && (
+                                    <p
+                                        style={{
+                                            fontSize: "20px", // Larger font for emphasis
+                                            fontWeight: "bold", // Bold for emphasis
+                                            color: "#A54f25", // Match the theme color
+                                            // marginBottom: "15px",
+                                        }}
+                                    >
+                                        {item.highlight}
+                                    </p>
+                                )}
+                            </div>
                         )}
 
                         {/* List */}
                         {item.list && (
                             <ul
                                 style={{
-                                    paddingLeft: "20%",
-                                    textAlign: "left",
+                                    paddingLeft: "5%",
+                                    textAlign: "center",
                                     marginBottom: "10px",
                                     color: "#555",
                                 }}
@@ -86,18 +112,18 @@ const ProjectDetail = ({ params }: { params: { slug: string } }) => {
                         )}
 
                         {/* Render Image or Video */}
-                        {item.type === "image" ? (
+                        {item.type === "image" && item.src? (
                             <img
                                 src={item.src}
-                                alt={item.header || `Media ${index + 1}`}
+                                // alt={"" || `Media ${index + 1}`}
                                 style={{
                                     maxWidth: SMALL_IMAGES.includes(item.src)
                                         ? "70%" // Smaller size for specific images
-                                        : "100%", // Default size for other images
+                                        : "85%", // Default size for other images
                                     height: "auto",
                                     objectFit: "contain", // Avoid cropping
                                     borderRadius: "10px",
-                                    marginTop: "20px",
+                                    // marginTop: "5px",
                                 }}
                             />
                         ) : item.type === "video" ? (

@@ -7,10 +7,11 @@
 // };
 
 export type MediaItem = {
-    type: "image" | "video"; // Indicates whether it's an image or video
-    src: string; // The source URL for the media (image or video)
+    type: "image" | "video" | "pdf"; // Indicates whether it's an image or video
+    src?: string; // The source URL for the media (image or video)
     header?: string | null; // Optional header for the media
     description?: string | null; // Optional description for the media
+    highlight?: string | null; // Optional highlight text
     list?: string[] | null; // Optional list for additional details
 };
 
@@ -41,27 +42,40 @@ export const projects: Project[] = [
                 type: "image",
                 src: "/images/project1/Project1 Web_Page_01.jpg",
                 header: "PROPOSAL ABSTRACT", // New field
-                // description: "A digital app that connects users in need of professional clothing repair.",
-                //     list: [
-                //     "",
-                //     "",
-                //     "",
-                // ] ,// New list of strings
+                description:
+                    "Many people are addicted to buying fast fashion and keeping up with the latest trends. Shopping for new styles—whether it’s shoes, jeans, tops, or jackets—allows us to express who we are to the world. But have you ever considered where all that clothing ends up once you’re done with it? Do you donate it, recycle it, or throw it away?",
+                highlight: "Where do all these discarded clothes ultimately go?",
             },
             { type: "image", src: "/images/project1/Project1 Web_Page_02.jpg", description: "" },
-            { type: "image", src: "/images/project1/Project1 Web_Page_03.jpg", description: "" },
-            { type: "image", src: "/images/project1/Project1 Web_Page_04.jpg", description: "" },
-            { type: "image", src: "/images/project1/Project1 Web_Page_05.jpg", description: "" },
-            { type: "image", src: "/images/project1/Project1 Web_Page_06.jpg", description: "" },
+            {
+                type: "image",
+                src: "/images/project1/Project1 Web_Page_03.jpg",
+                description:
+                    "It’s time to end throwaway practices and stop destroying overstock clothing. As consumers, we can stop buying excessively by supporting eco-friendly manufacturers and repair services business.",
+                highlight: "Because waste is out of fashion",
+            },
+            { type: "image", src: "/images/project1/Project1 Web_Page_04a.jpg", header: "PROBLEM" },
+            { type: "image", src: "/images/project1/Project1 Web_Page_04b.jpg", header: "SOLUTION" },
+            { type: "image", src: "/images/project1/Project1 Web_Page_05.jpg", header: "WHAT IS ECOSTITCH?", description: "A digital app that connects users in need of professional clothing repair, alteration, and upcycling services with skilled tailors and fashion experts. EcoStitch aims to transform the way users engage with their wardrobes and extend the lifespan of their clothing items." },
+            { type: "image", header: "WHO IS THIS FOR?", description: "Anyone who seeks to extend the life of their clothing or accessories while reducing their carbon footprint will find value in EcoStitch. Whether it’s to repair a beloved garment, tailor a new purchase, or explore creative upcycling ideas, users benefit from its sustainable and user-centric approach." },
+            { type: "image", src: "/images/project1/Project1 Web_Page_06.jpg", header: "WHAT DOES IT PROVIDE", description: "Convenient access to professional clothing repair, alteration, and upcycling services. The key benefits include virtual consultations, sustainable clothing care solutions, personalized clothing customization, and community engagement with fashion experts. " },
             { type: "image", src: "/images/project1/Project1 Web_Page_07.jpg", header: "COMPETITOR ANALYSIS" },
-            { type: "image", src: "/images/project1/Project1 Web_Page_08.jpg", header: "MOOD BOARD" },
+            { type: "image", src: "/images/project1/Project1 Web_Page_08.jpg", header: "MOOD BOARD", description: "My inspiration are the artworks of Gabriela Martínez. It inspires me using fabric scraps and yarn to give old garments new life. It’s very provoked to see how the artist embraces sustainability and organic concepts into her fashion practice. I want to integrate the principles of ‘slow fashion’ and the colors showing on my mood board into my UI design." },
             { type: "image", src: "/images/project1/Project1 Web_Page_09.jpg", header: "STYLE GUIDE" },
-            { type: "image",  src: "/images/project1/Project1 Web_Page_10.jpg", description: "" },
-            { type: "image", src: "/images/project1/Project1 Web_Page_11.jpg", header: "USER RESEARCH" },
+            { type: "image",  src: "/images/project1/Project1 Web_Page_10.jpg", header: "USER SURVEY INFOGRAPHIC" },
+            { type: "image", src: "/images/project1/Project1 Web_Page_11a.jpg", header: "USER RESEARCH" },
+            { type: "image", src: "/images/project1/Project1 Web_Page_11b.jpg", header: "AUDIENCE DESCRIPTION", description: "Individuals aged 25-44, with a moderate interest in sustainable fashion practices and a willingness to engage in clothing repair and alteration services for environmental and economic reasons." },
+            { type: "image", src: "/images/project1/Project1 Web_Page_11c.jpg", header: "THE MAIN LEARNING", description: "My target users show the high interests in sustainable fashion practices, the varying levels of familiarity with slow fashion, and the challenges associated with accessing reliable clothing repair and alteration services."},
+            { type: "image", src: "/images/project1/Project1 Web_Page_11d.jpg", header: "THE MOST INTERESTING LEARNINGS", description: "The diverse motivations for embracing slow fashion, the significant proportion of respondents interested in using an app for clothing care, and the challenges related to finding cost-effective and high-quality clothing alteration services."},
+            { type: "image", header: "HOW WILL I USE THEM", list: ["- Emphasize the app’s user-friendly interface, affordability, and accessibility, highlighting its capacity to address the challenges users face in seeking reliable and cost-effective clothing repair and alteration services.",
+                "- Integrate educational resources and interactive features within the app to cater to users who are less familiar with sustainable fashion practices. ",
+                "- Leverage the motivations for embracing slow fashion to emphasize the environmental benefits and cost-saving aspects of the EcoStitch platform."]},
             { type: "image", src: "/images/project1/Project1 Web_Page_12.jpg", header: "PERSONA" },
             { type: "image", src: "/images/project1/Project1 Web_Page_13.jpg", header: "STORY BOARD" },
-            { type: "image", src: "/images/project1/Project1 Web_Page_14.jpg", header: "TASK FLOW" },
-            { type: "image", src: "/images/project1/Project1 Web_Page_15.jpg", header: "USER TESTING METRICS" },
+            { type: "image", src: "/images/project1/Project1 Web_Page_14.jpg", header: "TASK FLOW", description: "This task flow diagram illustrates Zoe Zhao’s journey as she interacts with the EcoStitch app, emphasizing the seamless and convenient process of accessing professional repair services for her cherished jacket by fix the dropped button." },
+            { type: "image", header: "INTERVIEW RESULTS", description: "I picked interviewers from my large target audience and interviewed them in person. During the interviews, I took a lot of notes and observed them. I found out that all of them care about sustainability, showing interests in slow fashion practices. It was interesting that each person has diverse demands for a trustworthy and easy-to-access clothing care app." },
+            { type: "image", src: "/images/project1/Project1 Web_Page_15.jpg", header: "USER TESTING METRICS", description: "   After second user testing,\n" +
+                    "participants rate from 1-5 ease of use increased from 4.14 to ", highlight: "4.85"},
             { type: "image", src: "/images/project1/Project1 Web_Page_16.jpg", header: "HIGH-FIDELITY WIREFRAMES" },
             { type: "image", src: "/images/project1/Project1 Web_Page_17.jpg", description: "" },
             { type: "image", src: "/images/project1/Project1 Web_Page_18.jpg", description: "" },
