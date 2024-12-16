@@ -10,8 +10,8 @@ export type MediaItem = {
     type: "image" | "video" | "pdf"; // Indicates whether it's an image or video
     src?: string; // The source URL for the media (image or video)
     header?: string | null; // Optional header for the media
-    description?: string | null; // Optional description for the media
     highlight?: string | null; // Optional highlight text
+    description?: string | null; // Optional description for the media
     list?: string[] | null; // Optional list for additional details
 };
 
@@ -43,48 +43,44 @@ export const projects: Project[] = [
                 src: "/images/project1/Project1 Web_Page_01.jpg",
                 header: "PROPOSAL ABSTRACT", // New field
                 description:
-                    "Many people are addicted to buying fast fashion and keeping up with the latest trends. Shopping for new styles—whether it’s shoes, jeans, tops, or jackets—allows us to express who we are to the world. But have you ever considered where all that clothing ends up once you’re done with it? Do you donate it, recycle it, or throw it away?",
-                highlight: "Where do all these discarded clothes ultimately go?",
+                    "Many people are addicted to buying fast fashion and keeping up with the latest trends. Shopping for new styles—whether it’s shoes, jeans, tops, or jackets—allows us to express who we are to the world. But have you ever considered where all that clothing ends up once you’re done with it? Do you donate it, recycle it, or throw it away? Where do all these discarded clothes ultimately go?",
             },
-            { type: "image", src: "/images/project1/Project1 Web_Page_02.jpg", description: "" },
+            { type: "image", src: "/images/project1/Project1 Web_Page_02.jpg", description: "It’s time to end throwaway practices and stop destroying overstock clothing. As consumers, we can stop buying excessively by supporting eco-friendly manufacturers and repair services business. Because waste is out of fashion." },
             {
                 type: "image",
                 src: "/images/project1/Project1 Web_Page_03.jpg",
                 description:
-                    "It’s time to end throwaway practices and stop destroying overstock clothing. As consumers, we can stop buying excessively by supporting eco-friendly manufacturers and repair services business.",
-                highlight: "Because waste is out of fashion",
+                    " ",
             },
-            { type: "image", src: "/images/project1/Project1 Web_Page_04a.jpg", header: "PROBLEM" },
-            { type: "image", src: "/images/project1/Project1 Web_Page_04b.jpg", header: "SOLUTION" },
-            { type: "image", src: "/images/project1/Project1 Web_Page_05.jpg", header: "WHAT IS ECOSTITCH?", description: "A digital app that connects users in need of professional clothing repair, alteration, and upcycling services with skilled tailors and fashion experts. EcoStitch aims to transform the way users engage with their wardrobes and extend the lifespan of their clothing items." },
-            { type: "image", header: "WHO IS THIS FOR?", description: "Anyone who seeks to extend the life of their clothing or accessories while reducing their carbon footprint will find value in EcoStitch. Whether it’s to repair a beloved garment, tailor a new purchase, or explore creative upcycling ideas, users benefit from its sustainable and user-centric approach." },
-            { type: "image", src: "/images/project1/Project1 Web_Page_06.jpg", header: "WHAT DOES IT PROVIDE", description: "Convenient access to professional clothing repair, alteration, and upcycling services. The key benefits include virtual consultations, sustainable clothing care solutions, personalized clothing customization, and community engagement with fashion experts. " },
-            { type: "image", src: "/images/project1/Project1 Web_Page_07.jpg", header: "COMPETITOR ANALYSIS" },
-            { type: "image", src: "/images/project1/Project1 Web_Page_08.jpg", header: "MOOD BOARD", description: "My inspiration are the artworks of Gabriela Martínez. It inspires me using fabric scraps and yarn to give old garments new life. It’s very provoked to see how the artist embraces sustainability and organic concepts into her fashion practice. I want to integrate the principles of ‘slow fashion’ and the colors showing on my mood board into my UI design." },
+            { type: "image", src: "/images/project1/Project1 Web_Page_04a.jpg", description: " ", highlight: "PROBLEM" },
+            { type: "image", src: "/images/project1/Project1 Web_Page_04b.jpg", description: " ", highlight: "SOLUTION" },
+            { type: "image", src: "/images/project1/Project1 Web_Page_05.jpg",  highlight: "WHAT IS ECOSTITCH?", description: "A digital app that connects users in need of professional clothing repair, alteration, and upcycling services with skilled tailors and fashion experts. EcoStitch aims to transform the way users engage with their wardrobes and extend the lifespan of their clothing items." },
+            { type: "image", highlight: "WHO IS THIS FOR?", description: "Anyone who seeks to extend the life of their clothing or accessories while reducing their carbon footprint will find value in EcoStitch. Whether it’s to repair a beloved garment, tailor a new purchase, or explore creative upcycling ideas, users benefit from its sustainable and user-centric approach." },
+            { type: "image", src: "/images/project1/Project1 Web_Page_06.jpg", highlight: "WHAT DOES IT PROVIDE", description: "Convenient access to professional clothing repair, alteration, and upcycling services. The key benefits include virtual consultations, sustainable clothing care solutions, personalized clothing customization, and community engagement with fashion experts. " },
+            { type: "image", src: "/images/project1/Project1 Web_Page_07.jpg", header: "COMPETITOR ANALYSIS", description: "A comparison of existing clothing care and repair platforms, evaluating their strengths, weaknesses, and opportunities. I highlights areas where EcoStitch can improve user experience, such as integrating intuitive interfaces, virtual assistance, and sustainable material recommendations." },
+            { type: "image", src: "/images/project1/Project1 Web_Page_08.jpg", header: "MOOD BOARD", description: "My inspiration are the artworks of Gabriela Martínez. It inspires me using fabric scraps and yarn to give old garments new life. It’s very provoked to see how the artist embraces sustainability and organic concepts into her fashion practice. I want to integrate the principles of ‘slow fashion’ and the colors showing on my mood board into my UI design." },
             { type: "image", src: "/images/project1/Project1 Web_Page_09.jpg", header: "STYLE GUIDE" },
-            { type: "image",  src: "/images/project1/Project1 Web_Page_10.jpg", header: "USER SURVEY INFOGRAPHIC" },
-            { type: "image", src: "/images/project1/Project1 Web_Page_11a.jpg", header: "USER RESEARCH" },
-            { type: "image", src: "/images/project1/Project1 Web_Page_11b.jpg", header: "AUDIENCE DESCRIPTION", description: "Individuals aged 25-44, with a moderate interest in sustainable fashion practices and a willingness to engage in clothing repair and alteration services for environmental and economic reasons." },
-            { type: "image", src: "/images/project1/Project1 Web_Page_11c.jpg", header: "THE MAIN LEARNING", description: "My target users show the high interests in sustainable fashion practices, the varying levels of familiarity with slow fashion, and the challenges associated with accessing reliable clothing repair and alteration services."},
-            { type: "image", src: "/images/project1/Project1 Web_Page_11d.jpg", header: "THE MOST INTERESTING LEARNINGS", description: "The diverse motivations for embracing slow fashion, the significant proportion of respondents interested in using an app for clothing care, and the challenges related to finding cost-effective and high-quality clothing alteration services."},
-            { type: "image", header: "HOW WILL I USE THEM", list: ["- Emphasize the app’s user-friendly interface, affordability, and accessibility, highlighting its capacity to address the challenges users face in seeking reliable and cost-effective clothing repair and alteration services.",
-                "- Integrate educational resources and interactive features within the app to cater to users who are less familiar with sustainable fashion practices. ",
-                "- Leverage the motivations for embracing slow fashion to emphasize the environmental benefits and cost-saving aspects of the EcoStitch platform."]},
-            { type: "image", src: "/images/project1/Project1 Web_Page_12.jpg", header: "PERSONA" },
-            { type: "image", src: "/images/project1/Project1 Web_Page_13.jpg", header: "STORY BOARD" },
+            { type: "image",  src: "/images/project1/Project1 Web_Page_10.jpg", highlight: "USER SURVEY INFOGRAPHIC", description: "A visual summary of survey insights from 47 participants. The data reveals user behavior, interest in slow fashion, and key motivations for sustainable clothing practices. Findings emphasize the need for a platform like EcoStitch to bridge gaps in awareness, accessibility, and eco-friendly solutions. ", header: "USER RESEARCH" },
+            { type: "image", src: "/images/project1/Project1 Web_Page_11a.jpg", highlight: "AUDIENCE DESCRIPTION", description: "Individuals aged 25-44, with a moderate interest in sustainable fashion practices and a willingness to engage in clothing repair and alteration services for environmental and economic reasons. " },
+            { type: "image", src: "/images/project1/Project1 Web_Page_11b.jpg", highlight: "THE MAIN LEARNINGS", description: "My target users show the high interests in sustainable fashion practices, the varying levels of familiarity with slow fashion, and the challenges associated with accessing reliable clothing repair and alteration services."},
+            { type: "image", src: "/images/project1/Project1 Web_Page_11c.jpg", highlight: "THE MOST INTERESTING LEARNINGS", description: "The diverse motivations for embracing slow fashion, the significant proportion of respondents interested in using an app for clothing care, and the challenges related to finding cost-effective and high-quality clothing alteration services."},
+            { type: "image", src: "/images/project1/Project1 Web_Page_11d.jpg", highlight: "HOW WILL I USE THEM", description: " ", list: ["- Emphasize the app’s user-friendly interface, affordability, and accessibility, highlighting its capacity to address the challenges users face in seeking reliable and cost-effective clothing repair and alteration services.",
+                    "- Integrate educational resources and interactive features within the app to cater to users who are less familiar with sustainable fashion practices. ",
+                    "- Leverage the motivations for embracing slow fashion to emphasize the environmental benefits and cost-saving aspects of the EcoStitch platform."]},
+            { type: "image", src: "/images/project1/Project1 Web_Page_12.jpg", header: "PERSONA", description: "The persona represents Zoe Zhao, who values sustainable fashion but struggles to find reliable clothing repair services. Her frustrations include miscommunication, lack of trustworthy platforms, and unmet aesthetic needs. EcoStitch addresses these issues with accessible, user-friendly solutions tailored for people like Zoe." },
+            { type: "image", src: "/images/project1/Project1 Web_Page_13.jpg", header: "STORY BOARD", description: "The storyboard illustrates Zoe's journey using EcoStitch. After struggling to fix a button on her favorite jacket, she discovers the app, uploads details, and successfully uses the platform to get her garment professionally repaired. The process highlights EcoStitch's seamless and efficient user experience."},
             { type: "image", src: "/images/project1/Project1 Web_Page_14.jpg", header: "TASK FLOW", description: "This task flow diagram illustrates Zoe Zhao’s journey as she interacts with the EcoStitch app, emphasizing the seamless and convenient process of accessing professional repair services for her cherished jacket by fix the dropped button." },
-            { type: "image", header: "INTERVIEW RESULTS", description: "I picked interviewers from my large target audience and interviewed them in person. During the interviews, I took a lot of notes and observed them. I found out that all of them care about sustainability, showing interests in slow fashion practices. It was interesting that each person has diverse demands for a trustworthy and easy-to-access clothing care app." },
-            { type: "image", src: "/images/project1/Project1 Web_Page_15.jpg", header: "USER TESTING METRICS", description: "   After second user testing,\n" +
-                    "participants rate from 1-5 ease of use increased from 4.14 to ", highlight: "4.85"},
-            { type: "image", src: "/images/project1/Project1 Web_Page_16.jpg", header: "HIGH-FIDELITY WIREFRAMES" },
-            { type: "image", src: "/images/project1/Project1 Web_Page_17.jpg", description: "" },
-            { type: "image", src: "/images/project1/Project1 Web_Page_18.jpg", description: "" },
-            { type: "image", src: "/images/project1/Project1 Web_Page_19.jpg", header: "PROTOTYPE" },
+            { type: "image", src: "/images/project1/Project1 Web_Page_14_5.jpg", header: "INTERVIEW RESULTS", description: "I picked interviewers from my large target audience and interviewed them in person. During the interviews, I took a lot of notes and observed them. I found out that all of them care about sustainability, showing interests in slow fashion practices. It was interesting that each person has diverse demands for a trustworthy and easy-to-access clothing care app." },
+            { type: "image", src: "/images/project1/Project1 Web_Page_15.jpg", header: "USER TESTING METRICS", description: " The user testing metrics summarize the app's usability improvements. After the second round of testing, participants' ease-of-use ratings increased from 4.14 to 4.85. Most users completed tasks successfully and expressed high satisfaction, validating the app's intuitive design and functionality."},
+            { type: "image", src: "/images/project1/Project1 Web_Page_16.jpg", header: "HIGH-FIDELITY WIREFRAMES", description: " These screens shows the steps of user choosing service at the bottom menu bar, then selecting jacket at mending section, and choosing the service type of replacing buttons.  " },
+            { type: "image", src: "/images/project1/Project1 Web_Page_17.jpg", description: "These screens illustrates the steps of user inputing item description, then inputing mending details, and choosing delivery preference.  " },
+            { type: "image", src: "/images/project1/Project1 Web_Page_18.jpg", description: "These screens shows the steps of user checking out, then make payment, and finishing booking the service. " },
+            // { type: "image", src: "/images/project1/Project1 Web_Page_19.jpg", header: "PROTOTYPE" },
             {
                 type: "video",
                 src: "/videos/P1Prototype.mp4",
                 header: "Prototype Demo",
-                description: "This is a prototype demonstration of EcoStitch.",
+                // description: "This is a prototype demonstration of EcoStitch.",
             },
         ],
         description: "A digital app that connects users in need of professional clothing repair.",
@@ -99,16 +95,40 @@ export const projects: Project[] = [
             src: "/images/project2/cover.jpg"
         },
         media: [
-            { type: "image", src: "/images/project2/Project2 Web_Page_1.jpg", header: "BACKGROUND RESEARCH" },
-            { type: "image", src: "/images/project2/Project2 Web_Page_2.jpg" },
-            { type: "image", src: "/images/project2/Project2 Web_Page_3.jpg", header: "PERSONA" },
-            { type: "image", src: "/images/project2/Project2 Web_Page_4.jpg", header: "SKETCH" },
-            { type: "image", src: "/images/project2/Project2 Web_Page_5.jpg", header: "MOOD BOARD" },
-            { type: "image", src: "/images/project2/Project2 Web_Page_6.jpg", header: "STYLE GUIDE" },
-            { type: "image", src: "/images/project2/Project2 Web_Page_7.jpg", header: "LOW-FIDELITY WIREFRAMES" },
-            { type: "image", src: "/images/project2/Project2 Web_Page_8.jpg", header: "MID-FIDELITY WIREFRAMES" },
-            { type: "image", src: "/images/project2/Project2 Web_Page_9.jpg", header: "HIGH-FIDELITY WIREFRAMES" },
-            { type: "image", src: "/images/project2/Project2 Web_Page_10.jpg", header: "MOCKUP" }
+            { type: "image", src: "/images/project2/Project2 Web_Page_1.jpg", header: "BACKGROUND RESEARCH", description: "As remote work becomes the norm, effective digital tools are essential for managing tasks and meeting deadlines. Taskit is a task management dashboard designed to help teams track progress intuitively and efficiently. The project required tackling the challenges of remote collaboration by focusing on creating a user-friendly, visually appealing interface.\n" +
+                    "\n" +
+                    "This case study highlights the design process, from user research and ideation to iterative development and the final product. Key design decisions are examined, showcasing how they addressed user needs and contributed to a successful outcome.\n" },
+            { type: "image",  header: "TasKit - Remote Employees/Freelancer Task Management Dashboard"},
+            { type: "image",  list:[
+                    "Concept: ",
+                    "A task management solution designed for remote employees and freelancers.",
+                ]},
+            { type: "image",  list:[
+                    "Target Audience: ",
+                    "Employees and freelancers aged 20-60 working remotely or in distributed teams.",
+                ]},
+            { type: "image",  list:[
+                    "Benefits: ",
+                    "- Streamlines task and workflow management for companies with distributed teams across regions or countries.\n",
+                    "- Enhances communication and collaboration for teams working from home or other remote locations.\n",
+                    "- Helps companies reduce overhead costs while maintaining productivity and efficiency.\n"
+                ]},
+            { type: "image",  list:[
+                    "Features: ",
+                    "- Streamlines task and workflow management for companies with distributed teams across regions or countries.\n",
+                    "- Enhances communication and collaboration for teams working from home or other remote locations.\n",
+                    "- Helps companies reduce overhead costs while maintaining productivity and efficiency.\n"
+                ]},
+            // { type: "image", src: "/images/project2/Project2 Web_Page_2.jpg", highlight: "Test" },
+            { type: "image", src: "/images/project2/Project2 Web_Page_3.jpg", header: "PERSONA", description: "Emily Johnson, a skilled UI/UX designer. The persona shows her frustrations, needs, and goals, offering insights into the target audience’s challenges and priorities for the task management dashboard." },
+            { type: "image", src: "/images/project2/Project2 Web_Page_4.jpg", header: "SKETCH", description: "My initial hand-drawn sketches explore the core layout and structure of the dashboard, focusing on key components like task lists, team chats, and progress tracking." },
+            { type: "image", src: "/images/project2/Project2 Web_Page_5.jpg", header: "MOOD BOARD", description: "The moodboard defines the visual direction, incorporating soothing pastel gradients, soft tones, and modern UI inspirations to create a calm and professional interface."},
+            { type: "image", src: "/images/project2/Project2 Web_Page_6.jpg", header: "STYLE GUIDE", description: "My style guide establishes the design system, including a harmonious color palette, typeface choices, button styles, and icons, ensuring consistency across the dashboard." },
+            { type: "image", src: "/images/project2/Project2 Web_Page_7.jpg", header: "LOW-FIDELITY WIREFRAMES", description: "The low-fidelity wireframe focuses on the dashboard’s functionality and layout, mapping out the basic structure without detailed visuals." },
+            { type: "image", src: "/images/project2/Project2 Web_Page_8.jpg", header: "MID-FIDELITY WIREFRAMES", description: "This version adds more visual clarity, including refined layouts and placeholder elements, offering a closer look at the dashboard’s components." },
+            { type: "image", src: "/images/project2/Project2 Web_Page_9.jpg", header: "HIGH-FIDELITY WIREFRAMES", description: "The final polished design integrates colors, typography, and interactive elements, showcasing the fully realized dashboard with visual appeal and user-friendly navigation." },
+            { type: "image", src: "/images/project2/Project2 Web_Page_10.jpg", header: "MOCKUP" },
+            { type: "image", header: "TAKEAWAY", description: "This case study highlights the importance of understanding user needs, thoughtful design iteration, and visual consistency in creating a user-friendly task management dashboard. By combining research, ideation, and refined design systems, TasKit successfully addresses the challenges of remote collaboration, enhancing productivity and user experience." },
         ],
         description: "Dashboard design for remote worker’s task management.",
         slug: "taskit",
@@ -121,18 +141,34 @@ export const projects: Project[] = [
             src: "/images/project3/cover.jpg"
         },
         media: [
-            { type: "image", src: "/images/project3/Project3 Web_Page_01.jpg", header: "BACKGROUND RESEARCH" },
-            { type: "image", src: "/images/project3/Project3 Web_Page_02.jpg", header: "" },
-            { type: "image", src: "/images/project3/Project3 Web_Page_03.jpg", header: "COMPETITIVE ANALYSIS" },
-            { type: "image", src: "/images/project3/Project3 Web_Page_04.jpg", header: "IDENTIFY AUDIENCE" },
-            { type: "image", src: "/images/project3/Project3 Web_Page_05.jpg", header: "CONCEPT DEVELOPMENT" },
-            { type: "image", src: "/images/project3/Project3 Web_Page_06.jpg", header: "" },
+            { type: "image", src: "/images/project3/Project3 Web_Page_01.jpg", header: "BACKGROUND RESEARCH", highlight: "ABOUT THE IVY", description: "Located on Robertson Boulevard in Los Angeles, The Ivy is famous for its celebrity sightings and paparazzi presence. Known for its nouvelle American cuisine, the restaurant features charming country-cottage decor with a flowery outdoor terrace, framed by ivy and surrounded by a signature white picket fence.\n" +
+                    "\n" +
+                    "\nIts cozy interior boasts rustic antiques, vibrant floral arrangements, and folksy touches, creating a warm and inviting atmosphere. The menu highlights American cuisine with a strong emphasis on Louisiana/Cajun specialties, complemented by an array of delightful desserts.  " },
+            { type: "image", src: "/images/project3/Project3 Web_Page_02.jpg", highlight: "MY EXPERIENCE", description: "The restaurant's style blends Italian and American influences in both its decor and cuisine. While the interior was visually appealing, I found the dishes overpriced for their value.\n" +
+                    "\n" +
+                    "I appreciated the charming decor, especially the fresh flowers that lifted my mood and the adorable plates. However, the steep prices were disappointing, and the menu design lacked elegance." },
+            { type: "image", src: "/images/project3/Project3 Web_Page_03.jpg", header: "COMPETITIVE ANALYSIS",highlight: "Larchmont Bungalow Café",  description: "Larchmont Bungalow Cafe, located in the vibrant Echo Park neighborhood of Los Angeles, is committed to healthier eating and quality dining. Their dishes are crafted with the freshest ingredients, ensuring freshness, quality, and consistency. Beyond the food, they prioritize warm, family-like service and offer a cozy environment for customers to enjoy their meals."},
+            { type: "image", src: "/images/project3/Project3 Web_Page_03_5.jpg", header: "COMPETITIVE ANALYSIS",highlight: "Openaire",  description: "Openaire, located at The Line Hotel in Koreatown, occupies the former Commissary space and retains its greenhouse-inspired dining room reminiscent of a Hamptons estate. Now helmed by the chef from Melisse and Charcoal, the menu has undergone significant changes. Highlights include the hamachi crudo and sirloin steak with toasted garlic brown butter sauce, though some dishes, like shrimp paired with beans, turnips, and herby sauce, miss the mark."},
+            { type: "image", src: "/images/project3/Project3 Web_Page_04.jpg", header: "IDENTIFY AUDIENCE", description: "TARGET AUDIENCE",
+                list:["- Age 22-40, female 80%,  male 20%.\n",
+                "- Prefer to dining at high-end restaurant .\n",
+                "- Care about appearance of dishes.\n",
+                "- Care about exquisite of restaurant and food.\n",
+                "-Love to din in relatively expensive restaurant.\n",
+                "- Love to eat with nature, fresh flowers.\n",
+                "- Love floral, colorful and vivid interior.\n",
+                "- Like Italian American style brunch.\n",
+                "- Love to hang out and have brunch with friends.\n",
+                "- Love to take photos and share on social media. "] },
+            { type: "image", src: "/images/project3/Project3 Web_Page_05.jpg", header: "CONCEPT DEVELOPMENT", highlight: "WORD LIST", description: " "},
+            { type: "image", highlight: "Mission Statement", description: "The Ivy restaurant serves dishes made with the freshest ingredients, complemented by a welcoming country cottage ambiance adorned with ivy and fresh flowers. We strive to create a warm environment and provide family-like service, where food brings people together." },
+            // { type: "image", src: "/images/project3/Project3 Web_Page_06.jpg", header: "" },
             { type: "image", src: "/images/project3/Project3 Web_Page_07.jpg", header: "MOOD BOARD" },
-            { type: "image", src: "/images/project3/Project3 Web_Page_08.jpg", header: "LOGO DESIGN" },
-            { type: "image", src: "/images/project3/Project3 Web_Page_09.jpg", header: "" },
-            { type: "image", src: "/images/project3/Project3 Web_Page_10.jpg", header: "" },
-            { type: "image", src: "/images/project3/Project3 Web_Page_11.jpg", header: "" },
-            { type: "image", src: "/images/project3/Project3 Web_Page_12.jpg", header: "IDENTITY DESIGN" },
+            { type: "image", src: "/images/project3/Project3 Web_Page_08.jpg", header: "LOGO DESIGN", highlight: "LOGO SKETCHES", description: " "},
+            { type: "image", src: "/images/project3/Project3 Web_Page_09.jpg", highlight: "TOP 3 SELECTIONS", description: " " },
+            { type: "image", src: "/images/project3/Project3 Web_Page_10.jpg", highlight: "STYLE GUIDES", description: " " },
+            { type: "image", src: "/images/project3/Project3 Web_Page_11.jpg", highlight: "FORBIDDEN USAGE", description: " " },
+            { type: "image", src: "/images/project3/Project3 Web_Page_12.jpg", header: "IDENTITY DESIGN", highlight: "BUSINESS CARD", description: " " },
             { type: "image", src: "/images/project3/Project3 Web_Page_13.jpg", header: "VISUAL DESIGN & MOCKUP" },
             { type: "image", src: "/images/project3/The Ivy Web 1.png", header: "HIGH-FIDELITY WIREFRAMES" },
             { type: "image", src: "/images/project3/The Ivy Web 2.png", header: "" },

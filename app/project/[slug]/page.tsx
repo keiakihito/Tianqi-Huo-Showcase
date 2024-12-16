@@ -45,6 +45,7 @@ const ProjectDetail = ({ params }: { params: { slug: string } }) => {
                         {item.header && (
                             <h2
                                 style={{
+                                    // textAlign: "left",
                                     fontSize: "24px",
                                     fontWeight: "bold",
                                     color: "#A54f25",
@@ -60,55 +61,38 @@ const ProjectDetail = ({ params }: { params: { slug: string } }) => {
                         {item.description && (
                             <div
                                 style={{
-                                    textAlign: "center",
+                                    textAlign: "left",
                                     margin: "20px auto",
                                     padding: "10px 20px",
                                     maxWidth: "800px", // Limit width for better readability
                                 }}
                             >
-                                <p
-                                    style={{
-                                        fontSize: "20px", // Slightly larger font
-                                        lineHeight: "1.6", // Improve readability with better line spacing
-                                        color: "#4A4A4A", // A slightly muted color for text
-                                        fontWeight: "400", // Regular font weight for body text
-                                        // marginBottom: "20px",
-                                    }}
-                                >
-                                    {item.description}
-                                </p>
                                 {/* Additional Highlighted Text */}
                                 {item.highlight && (
                                     <p
                                         style={{
                                             fontSize: "20px", // Larger font for emphasis
                                             fontWeight: "bold", // Bold for emphasis
-                                            color: "#A54f25", // Match the theme color
+                                            color: "#4A4A4A", // Match the theme color
                                             // marginBottom: "15px",
                                         }}
                                     >
                                         {item.highlight}
                                     </p>
                                 )}
-                            </div>
-                        )}
+                                {/*<p*/}
+                                {/*    style={{*/}
+                                {/*        fontSize: "20px", // Slightly larger font*/}
+                                {/*        lineHeight: "1.6", // Improve readability with better line spacing*/}
+                                {/*        color: "#4A4A4A", // A slightly muted color for text*/}
+                                {/*        fontWeight: "400", // Regular font weight for body text*/}
+                                {/*        // marginBottom: "20px",*/}
+                                {/*    }}*/}
+                                {/*>*/}
+                                {/*    {item.description}*/}
+                                {/*</p>*/}
 
-                        {/* List */}
-                        {item.list && (
-                            <ul
-                                style={{
-                                    paddingLeft: "5%",
-                                    textAlign: "center",
-                                    marginBottom: "10px",
-                                    color: "#555",
-                                }}
-                            >
-                                {item.list.map((listItem, i) => (
-                                    <li key={i} style={{marginBottom: "5px"}}>
-                                        {listItem}
-                                    </li>
-                                ))}
-                            </ul>
+                            </div>
                         )}
 
                         {/* Render Image or Video */}
@@ -144,6 +128,63 @@ const ProjectDetail = ({ params }: { params: { slug: string } }) => {
                                 Your browser does not support the video tag.
                             </video>
                         ) : null}
+
+
+                        {/* Description */}
+                        {item.description && (
+                            <div
+                                style={{
+                                    textAlign: "left",
+                                    margin: "20px auto",
+                                    // padding: "10px 20px",
+                                    maxWidth: "800px", // Limit width for better readability
+                                }}
+                            >
+                                {/*/!* Additional Highlighted Text *!/*/}
+                                {/*{item.highlight && (*/}
+                                {/*    <p*/}
+                                {/*        style={{*/}
+                                {/*            fontSize: "20px", // Larger font for emphasis*/}
+                                {/*            fontWeight: "bold", // Bold for emphasis*/}
+                                {/*            color: "#4A4A4A", // Match the theme color*/}
+                                {/*            // marginBottom: "15px",*/}
+                                {/*        }}*/}
+                                {/*    >*/}
+                                {/*        {item.highlight}*/}
+                                {/*    </p>*/}
+                                {/*)}*/}
+                                <p
+                                    style={{
+                                        fontSize: "20px", // Slightly larger font
+                                        lineHeight: "1.6", // Improve readability with better line spacing
+                                        color: "#4A4A4A", // A slightly muted color for text
+                                        fontWeight: "400", // Regular font weight for body text
+                                        // marginBottom: "20px",
+                                    }}
+                                >
+                                    {item.description}
+                                </p>
+
+                            </div>
+                        )}
+
+                        {/* List */}
+                        {item.list && (
+                            <ul
+                                style={{
+                                    paddingLeft: "10%",
+                                    textAlign: "left",
+                                    marginBottom: "10px",
+                                    color: "#555",
+                                }}
+                            >
+                                {item.list.map((listItem, i) => (
+                                    <li key={i} style={{marginBottom: "5px"}}>
+                                        {listItem}
+                                    </li>
+                                ))}
+                            </ul>
+                        )}
                     </div>
                 ))}
             </div>
