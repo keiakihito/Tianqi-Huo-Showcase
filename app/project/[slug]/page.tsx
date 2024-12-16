@@ -10,6 +10,14 @@ const SMALL_IMAGES = [
     "/images/project1/Project1 Web_Page_18.jpg",
 ];
 
+const colorMap: { [key: string]: string } = {
+    "Project 1: EcoStitch": "#AE5532",
+    "Project 2: TasKit": "#8250A7",
+    "Project 3: The Ivy": "#446038",
+    "Project 4: Piggy Bank": "#D6B24E",
+    "Project 5: Brand Identity": "#B46B3E",
+};
+
 
 export async function generateStaticParams() {
     return projects.map((project) => ({
@@ -34,23 +42,32 @@ const ProjectDetail = ({ params }: { params: { slug: string } }) => {
 
     return (
         <div style={{textAlign: "center"}}>
-            <h1>{project.title}</h1>
+            <h1
+                style={{
+                    // textAlign: "left",
+                    fontSize: "45px",
+                }}
+            >{project.title}</h1>
             <p>{project.description}</p>
 
             {/* Display Images with Headers, Descriptions, and Lists */}
             <div className="media-gallery">
                 {project.media?.map((item, index) => (
-                    <div key={index} style={{marginBottom: "40px"}}>
+                    <div key={index} style={{marginBottom: "40px", textAlign: "center"}}>
                         {/* Header */}
                         {item.header && (
                             <h2
                                 style={{
-                                    // textAlign: "left",
-                                    fontSize: "24px",
+                                    textAlign: "left",
+                                    fontSize: "35px",
                                     fontWeight: "bold",
-                                    color: "#A54f25",
+                                    maxWidth: "800px", // Consistent with the other elements
+                                    margin: "0 auto", // Center align horizontally
+                                    // color: "#A54f25",
+                                    color: colorMap[project.title] || "#4A4A4A", // Default color if no match
                                     marginBottom: "10px",
-                                    marginTop: "100px", // Add this line for space above the header
+                                    marginTop: "120px",
+                                    // marginTop: "100px", // Add this line for space above the header
                                 }}
                             >
                                 {item.header}
@@ -102,8 +119,8 @@ const ProjectDetail = ({ params }: { params: { slug: string } }) => {
                                 // alt={"" || `Media ${index + 1}`}
                                 style={{
                                     maxWidth: SMALL_IMAGES.includes(item.src)
-                                        ? "70%" // Smaller size for specific images
-                                        : "85%", // Default size for other images
+                                        ? "60%" // Smaller size for specific images
+                                        : "75%", // Default size for other images
                                     height: "auto",
                                     objectFit: "contain", // Avoid cropping
                                     borderRadius: "10px",
@@ -165,26 +182,71 @@ const ProjectDetail = ({ params }: { params: { slug: string } }) => {
                                     {item.description}
                                 </p>
 
+                                {/*/!* List *!/*/}
+                                {/*{item.list && (*/}
+                                {/*    <ul*/}
+                                {/*        style={{*/}
+                                {/*            textAlign: "left",*/}
+                                {/*            marginBottom: "10px",*/}
+                                {/*            color: "#555",*/}
+                                {/*        }}*/}
+                                {/*    >*/}
+                                {/*        {item.list.map((listItem, i) => (*/}
+                                {/*            <li key={i} style={{marginBottom: "5px"}}>*/}
+                                {/*                {listItem}*/}
+                                {/*            </li>*/}
+                                {/*        ))}*/}
+                                {/*    </ul>*/}
+                                {/*)}*/}
+
                             </div>
                         )}
 
                         {/* List */}
+                        {/*{item.list && (*/}
+                        {/*    <ul*/}
+                        {/*        style={{*/}
+                        {/*            maxWidth: "800px", // Consistent with the other elements*/}
+                        {/*            margin: "0 auto", // Center align horizontally*/}
+                        {/*            // paddingLeft: "20px", // Prevent default list padding going too far left*/}
+                        {/*            textAlign: "left",*/}
+                        {/*            fontSize: "20px", // Match font size for consistency*/}
+                        {/*            color: "#555",*/}
+                        {/*        }}*/}
+                        {/*    >*/}
+                        {/*        {item.list.map((listItem, i) => (*/}
+                        {/*            <li key={i} style={{marginBottom: "5px"}}>*/}
+                        {/*                {listItem}*/}
+                        {/*            </li>*/}
+                        {/*        ))}*/}
+                        {/*    </ul>*/}
+                        {/*)}*/}
+
                         {item.list && (
                             <ul
                                 style={{
-                                    paddingLeft: "10%",
+                                    margin: "20px auto", // Center align with spacing
+                                    // paddingLeft: "20px", // Standard left padding for the list
                                     textAlign: "left",
-                                    marginBottom: "10px",
-                                    color: "#555",
+                                    maxWidth: "800px", // Align with description width
+                                    lineHeight: "1.8", // Improve line spacing
                                 }}
                             >
                                 {item.list.map((listItem, i) => (
-                                    <li key={i} style={{marginBottom: "5px"}}>
+                                    <li
+                                        key={i}
+                                        style={{
+                                            marginBottom: "15px", // Add space after each list item
+                                            fontSize: "18px", // Slightly larger font
+                                            color: "#4A4A4A", // Muted text color
+                                        }}
+                                    >
                                         {listItem}
                                     </li>
                                 ))}
                             </ul>
                         )}
+
                     </div>
                 ))}
             </div>
