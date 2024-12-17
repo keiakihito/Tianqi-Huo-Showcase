@@ -292,8 +292,10 @@ const ProjectDetail = ({ params }: { params: { slug: string } }) => {
                                 <img
                                     src={item.src}
                                     style={{
-                                        width: "100%", // Reduce the image size
-                                        maxWidth: "800px", // Ensure it doesn’t get too large on wide screens
+                                        // width: "100%", // Reduce the image size
+                                        // maxWidth: "800px", // Ensure it doesn’t get too large on wide screens
+                                        width: SMALL_IMAGES.includes(item.src) ? "50%" : "100%", // Smaller width for specific images
+                                        maxWidth: SMALL_IMAGES.includes(item.src) ? "400px" : "800px", // Limit max size
                                         height: "auto",
                                         display: "block", // Ensures the image behaves as a block element
                                         margin: "0 auto", // Center the image horizontally
