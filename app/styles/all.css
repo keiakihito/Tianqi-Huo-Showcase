@@ -130,8 +130,8 @@ ul {
 /* Button Styling */
 button {
     border-radius: 10px;
-    background-color: #F4A7B9; /* Soft pastel pink color */
-    color: #1D1D1D;
+    background-color: #AE5532; /* Soft pastel pink color */
+    color: #FFFFFF;
     padding: 10px 20px;
     font-weight: bold;
     font-size: 1.4rem;
@@ -142,7 +142,7 @@ button {
 }
 
 button:hover {
-    background-color: #EFA3B1; /* Slightly darker pastel pink on hover */
+    background-color: #AE5532; /* Slightly darker pastel pink on hover */
     transform: translateY(-2px);
 }
 
@@ -205,8 +205,8 @@ footer {
 
 /* Button Styling */
 .center-view-button {
-    background-color: #A8DADC; /* Soft pastel blue */
-    color: #1D3557; /* Darker text color */
+    background-color: #AE5532; /* Soft pastel blue */
+    color: #FFFFFF; /* Darker text color */
     border-radius: 10px;
     padding: 8px 16px;
     min-width: 150px;
@@ -217,7 +217,7 @@ footer {
 }
 
 .center-view-button:hover {
-    background-color: #457B9D; /* Slightly darker blue on hover */
+    background-color: #AE5532; /* Slightly darker blue on hover */
     transform: translateY(-2px);
 }
 
@@ -234,8 +234,8 @@ footer {
 
 /* View Button */
 .view-button {
-    background-color: #F4A7B9; /* Soft pastel pink */
-    color: #1D3557;            /* Darker text color */
+    background-color: #AE5532; /* Soft pastel pink */
+    color: #FFFFFF;            /* Darker text color */
     border-radius: 10px;
     padding: 8px 16px;
     min-width: 150px;
@@ -246,7 +246,7 @@ footer {
 }
 
 .view-button:hover {
-    background-color: #EFA3B1; /* Slightly darker on hover */
+    background-color: #AE5532; /* Slightly darker on hover */
     transform: translateY(-2px);
 }
 
@@ -269,8 +269,8 @@ footer {
 
 /* View Button */
 .view-button {
-    background-color: #F4A7B9; /* Soft pastel pink */
-    color: #1D3557; /* Darker text color */
+    background-color: #AE5532; /* Soft pastel pink */
+    color: #FFFFFF; /* Darker text color */
     border-radius: 10px;
     padding: 8px 16px;
     min-width: 150px;
@@ -282,10 +282,10 @@ footer {
 }
 
 .view-button:hover {
-    background-color: #EFA3B1; /* Slightly darker on hover */
+    background-color: #AE5532; /* Slightly darker on hover */
     transform: translateY(-2px);
 }
 .view-button:hover {
-    background-color: #EFA3B1; /* Slightly darker pastel pink on hover */
+    background-color: #AE5532; /* Slightly darker pastel pink on hover */
     transform: translateY(-2px);
 }
