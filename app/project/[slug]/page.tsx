@@ -6,9 +6,10 @@ import "@react-pdf-viewer/core/lib/styles/index.css";
 import {textAlign} from "@mui/system";
 
 const SMALL_IMAGES = [
-    "/images/project1/Project1 Web_Page_16.jpg",
-    "/images/project1/Project1 Web_Page_17.jpg",
-    "/images/project1/Project1 Web_Page_18.jpg",
+    "/images/project1/Project1 Web_Page_11a.jpg",
+    "/images/project1/Project1 Web_Page_11b.jpg",
+    "/images/project1/Project1 Web_Page_11c.jpg",
+    "/images/project1/Project1 Web_Page_11d.jpg",
     "/images/project3/Project3 Web_Page_01.jpg", //P3 pg1
     "/images/project3/Project3 Web_Page_02.jpg", //P3 pg2
     "/images/project3/Project3 Web_Page_03.jpg", //P3 pg3
@@ -16,6 +17,12 @@ const SMALL_IMAGES = [
     "/images/project3/Project3 Web_Page_04.jpg" // P3 pg5
 
 ];
+
+const MEDIUM_COVERS = [
+    "/images/project1/Project1 Web_Page_16.jpg",
+    "/images/project1/Project1 Web_Page_17.jpg",
+    "/images/project1/Project1 Web_Page_18.jpg",
+]
 
 const colorMap: { [key: string]: string } = {
     "Project 1: EcoStitch": "#AE5532",
@@ -139,10 +146,16 @@ const ProjectDetail = ({ params }: { params: { slug: string } }) => {
                                 <img
                                     src={item.src}
                                     style={{
-                                        // width: "100%", // Reduce the image size
-                                        // maxWidth: "800px", // Ensure it doesn’t get too large on wide screens
-                                        width: SMALL_IMAGES.includes(item.src) ? "70%" : "100%", // Smaller width for specific images
-                                        maxWidth: SMALL_IMAGES.includes(item.src) ? "600px" : "800px", // Limit max size
+                                        width: item.src && SMALL_IMAGES.includes(item.src)
+                                            ? "40%" // Smaller size for specific images
+                                            : MEDIUM_COVERS.includes(item.src ?? "")
+                                                ? "80%" // Medium size for specific images
+                                                : "100%", // Default size
+                                        maxWidth: item.src && SMALL_IMAGES.includes(item.src)
+                                            ? "350px" // Smaller max width for specific images
+                                            : MEDIUM_COVERS.includes(item.src ?? "")
+                                                ? "650px" // Medium max width for specific images
+                                                : "800px", // Default max width
                                         height: "auto",
                                         display: "block", // Ensures the image behaves as a block element
                                         margin: "0 auto", // Center the image horizontally
