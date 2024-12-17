@@ -10,16 +10,19 @@ const About = () => {
                 <div className="container" style={{textAlign: "center"}}>
                     <h1 style={{textAlign: "center", marginBottom: "20px"}}>Resume</h1>
                     <img
-                        src="/images/Resume_for_Website.jpg"
+                        src="/images/Resume_for_Website.png"
                         alt="Resume"
                         width="100%"
                         style={{
                             maxWidth: "800px",
                             margin: "0 auto",
                             display: "block",
-                            boxShadow: "0px 4px 15px rgba(0, 0, 0, 0.2)", // Add subtle shadow
-                            border: "none", // Ensure no border appears
-                            borderRadius: "10px", // Optional: Add rounded corners
+                            boxShadow: "0px 4px 15px rgba(0, 0, 0, 0.2)", // Soft shadow
+                            border: "none", // Completely remove border
+                            outline: "none", // Remove any outline
+                            padding: "0", // Ensure no padding
+                            backgroundColor: "transparent", // Remove background color if inherited
+                            borderRadius: "10px", // Optional rounded corners
                         }}
                     />
 
