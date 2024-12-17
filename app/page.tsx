@@ -15,16 +15,39 @@ const Index = () => {
   return(
       <>
           <div className="hero">
-              <Image src={heroPic} alt="hero" />
+              <Image src={heroPic}
+                     alt="hero"
+                     style={{
+                         width: "100%",
+                         height: "auto",
+                         objectFit: "cover"
+              }}/>
               <div className="textContainer">
                   <h1>Tianqi Huo</h1>
                   <h3>UI / UX Designer</h3>
               </div>
           </div>
-          <div className="profile">
-              <div className="profile">
+          <div className="profile"
+               style={{
+                   display: "flex",
+                   flexDirection: "column",
+                   alignItems: "center", // Center the media gallery container
+                   textAlign: "left", // Left-align the content inside
+                   maxWidth: "800px",
+                   margin: "0 auto",
+               }}>
                   <div>
-                      <Image className="profileImage" src={profilePic} alt="hero"/>
+                      <Image className="profileImage"
+                             src={profilePic}
+                             alt="hero"
+                             style={{
+                                 width: "100%",
+                                 maxWidth: "800px",
+                                 height: "auto",
+                                 borderRadius: "50%", // Circular profile image
+                                 margin: "0 auto", // Center the image horizontally
+                                 objectFit: "cover",
+                             }}/>
                   </div>
                   <div className="profileText">
                       <h2 className = "helloText">Hello, </h2>
@@ -36,7 +59,6 @@ const Index = () => {
                           <br/>My current aspiration is to transition into the dynamic field of product design, leveraging my
                           creativity and technical expertise to deliver impactful solutions.
                       </p>
-                  </div>
               </div>
               <div className="ctaButton">
                   <Link href="/contact">Reach Me Out!</Link>
