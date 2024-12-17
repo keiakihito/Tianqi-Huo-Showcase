@@ -78,16 +78,16 @@ const ProjectList = () => {
                     {project.cover.type === "image" && (
                         <Link href={`/project/${project.slug}`} passHref>
                             <img
-                                src={project.cover.src}
+                                src={project.cover.src ?? ""}
                                 alt={`${project.title} Cover`}
-                                style={imageStyle(project.cover.src)}
+                                style={imageStyle(project.cover.src ?? "")}
                             />
                         </Link>
                     )}
 
                     {/* Link Button */}
-                    <div style={{ marginTop: "10px" }}>
-                        <Link href={`/project/${project.slug}`} passHref>
+                    <div style={{marginTop: "10px"}}>
+                    <Link href={`/project/${project.slug}`} passHref>
                             <Button
                                 variant="contained"
                                 style={{
