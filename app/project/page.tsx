@@ -28,14 +28,10 @@ const containerStyle = {
     // backgroundColor: "#f9f9f9",
 };
 
-const imageStyle = (src: string | undefined) => ({
-    width: src && SMALL_COVERS.includes(src)
-        ? "50%"
-        : MEDIUM_COVERS.includes(src ?? "")
-            ? "60%"
-            : "100%",
+const imageStyle = (src: string): React.CSSProperties => ({
+    width: SMALL_COVERS.includes(src) ? "50%" : MEDIUM_COVERS.includes(src) ? "60%" : "100%",
     height: "auto",
-    objectFit: "contain",
+    objectFit: "contain", // This is now explicitly valid
     borderRadius: "10px",
     marginBottom: "20px",
 });
