@@ -15,7 +15,7 @@ const Contact = () => {
                     <form action="https://formspree.io/f/xxxxxxx" method="POST">
                         <label htmlFor="name">Name</label>
                         <input type="text" name="name" id="name" required/>
-                        <label htmlFor="email">E-ail Address</label>
+                        <label htmlFor="email">E-mail Address</label>
                         <input type="email" name="email" id="email" required/>
                         <label htmlFor="textarea">Description</label>
                         <textarea name="message" rows={10} id="textarea" required></textarea>

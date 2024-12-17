@@ -85,20 +85,20 @@ const ProjectList = () => {
                         </Link>
                     )}
 
-                    {/* Link Button */}
-                    <div style={{marginTop: "10px"}}>
-                    <Link href={`/project/${project.slug}`} passHref>
-                            <Button
-                                variant="contained"
-                                style={{
-                                    backgroundColor: colorMap[project.title] || "#007bff",
-                                    color: "white",
-                                }}
-                            >
-                                View Project
-                            </Button>
-                        </Link>
-                    </div>
+                    {/*/!* Link Button *!/*/}
+                    {/*<div style={{marginTop: "10px"}}>*/}
+                    {/*<Link href={`/project/${project.slug}`} passHref>*/}
+                    {/*        <Button*/}
+                    {/*            variant="contained"*/}
+                    {/*            style={{*/}
+                    {/*                backgroundColor: colorMap[project.title] || "#007bff",*/}
+                    {/*                color: "white",*/}
+                    {/*            }}*/}
+                    {/*        >*/}
+                    {/*            View Project*/}
+                    {/*        </Button>*/}
+                    {/*    </Link>*/}
+                    {/*</div>*/}
                 </div>
             ))}
         </div>
