@@ -41,25 +41,26 @@ export const projects: Project[] = [
             {
                 type: "image",
                 src: "/images/project1/Project1 Web_Page_01.jpg",
+                highlight: null,
                 header: "PROPOSAL ABSTRACT", // New field
                 description:
                     "Many people are addicted to buying fast fashion and keeping up with the latest trends. Shopping for new styles—whether it’s shoes, jeans, tops, or jackets—allows us to express who we are to the world. But have you ever considered where all that clothing ends up once you’re done with it? Do you donate it, recycle it, or throw it away? Where do all these discarded clothes ultimately go?",
             },
-            { type: "image", src: "/images/project1/Project1 Web_Page_02.jpg", description: "It’s time to end throwaway practices and stop destroying overstock clothing. As consumers, we can stop buying excessively by supporting eco-friendly manufacturers and repair services business. Because waste is out of fashion." },
+            { type: "image", src: "/images/project1/Project1 Web_Page_02.jpg", highlight: null, description: "It’s time to end throwaway practices and stop destroying overstock clothing. As consumers, we can stop buying excessively by supporting eco-friendly manufacturers and repair services business. Because waste is out of fashion." },
             {
                 type: "image",
                 src: "/images/project1/Project1 Web_Page_03.jpg",
-                description:
-                    " ",
+                highlight: null,
+                description: " ",
             },
             { type: "image", src: "/images/project1/Project1 Web_Page_04a.jpg", description: " ", highlight: "PROBLEM" },
             { type: "image", src: "/images/project1/Project1 Web_Page_04b.jpg", description: " ", highlight: "SOLUTION" },
             { type: "image", src: "/images/project1/Project1 Web_Page_05.jpg",  highlight: "WHAT IS ECOSTITCH?", description: "A digital app that connects users in need of professional clothing repair, alteration, and upcycling services with skilled tailors and fashion experts. EcoStitch aims to transform the way users engage with their wardrobes and extend the lifespan of their clothing items." },
             { type: "image", highlight: "WHO IS THIS FOR?", description: "Anyone who seeks to extend the life of their clothing or accessories while reducing their carbon footprint will find value in EcoStitch. Whether it’s to repair a beloved garment, tailor a new purchase, or explore creative upcycling ideas, users benefit from its sustainable and user-centric approach." },
             { type: "image", src: "/images/project1/Project1 Web_Page_06.jpg", highlight: "WHAT DOES IT PROVIDE", description: "Convenient access to professional clothing repair, alteration, and upcycling services. The key benefits include virtual consultations, sustainable clothing care solutions, personalized clothing customization, and community engagement with fashion experts. " },
-            { type: "image", src: "/images/project1/Project1 Web_Page_07.jpg", header: "COMPETITOR ANALYSIS", description: "A comparison of existing clothing care and repair platforms, evaluating their strengths, weaknesses, and opportunities. I highlights areas where EcoStitch can improve user experience, such as integrating intuitive interfaces, virtual assistance, and sustainable material recommendations." },
-            { type: "image", src: "/images/project1/Project1 Web_Page_08.jpg", header: "MOOD BOARD", description: "My inspiration are the artworks of Gabriela Martínez. It inspires me using fabric scraps and yarn to give old garments new life. It’s very provoked to see how the artist embraces sustainability and organic concepts into her fashion practice. I want to integrate the principles of ‘slow fashion’ and the colors showing on my mood board into my UI design." },
-            { type: "image", src: "/images/project1/Project1 Web_Page_09.jpg", header: "STYLE GUIDE" },
+            { type: "image", src: "/images/project1/Project1 Web_Page_07.jpg", highlight: null, header: "COMPETITOR ANALYSIS", description: "A comparison of existing clothing care and repair platforms, evaluating their strengths, weaknesses, and opportunities. I highlights areas where EcoStitch can improve user experience, such as integrating intuitive interfaces, virtual assistance, and sustainable material recommendations." },
+            { type: "image", src: "/images/project1/Project1 Web_Page_08.jpg", highlight: null, header: "MOOD BOARD", description: "My inspiration are the artworks of Gabriela Martínez. It inspires me using fabric scraps and yarn to give old garments new life. It’s very provoked to see how the artist embraces sustainability and organic concepts into her fashion practice. I want to integrate the principles of ‘slow fashion’ and the colors showing on my mood board into my UI design." },
+            { type: "image", src: "/images/project1/Project1 Web_Page_09.jpg", highlight: null, header: "STYLE GUIDE" },
             { type: "image",  src: "/images/project1/Project1 Web_Page_10.jpg", highlight: "USER SURVEY INFOGRAPHIC", description: "A visual summary of survey insights from 47 participants. The data reveals user behavior, interest in slow fashion, and key motivations for sustainable clothing practices. Findings emphasize the need for a platform like EcoStitch to bridge gaps in awareness, accessibility, and eco-friendly solutions. ", header: "USER RESEARCH" },
             { type: "image", src: "/images/project1/Project1 Web_Page_11a.jpg", highlight: "AUDIENCE DESCRIPTION", description: "Individuals aged 25-44, with a moderate interest in sustainable fashion practices and a willingness to engage in clothing repair and alteration services for environmental and economic reasons. " },
             { type: "image", src: "/images/project1/Project1 Web_Page_11b.jpg", highlight: "THE MAIN LEARNINGS", description: "My target users show the high interests in sustainable fashion practices, the varying levels of familiarity with slow fashion, and the challenges associated with accessing reliable clothing repair and alteration services."},
@@ -67,19 +68,20 @@ export const projects: Project[] = [
             { type: "image", src: "/images/project1/Project1 Web_Page_11d.jpg", highlight: "HOW WILL I USE THEM", description: " ", list: ["- Emphasize the app’s user-friendly interface, affordability, and accessibility, highlighting its capacity to address the challenges users face in seeking reliable and cost-effective clothing repair and alteration services.",
                     "- Integrate educational resources and interactive features within the app to cater to users who are less familiar with sustainable fashion practices. ",
                     "- Leverage the motivations for embracing slow fashion to emphasize the environmental benefits and cost-saving aspects of the EcoStitch platform."]},
-            { type: "image", src: "/images/project1/Project1 Web_Page_12.jpg", header: "PERSONA", description: "The persona represents Zoe Zhao, who values sustainable fashion but struggles to find reliable clothing repair services. Her frustrations include miscommunication, lack of trustworthy platforms, and unmet aesthetic needs. EcoStitch addresses these issues with accessible, user-friendly solutions tailored for people like Zoe." },
-            { type: "image", src: "/images/project1/Project1 Web_Page_13.jpg", header: "STORY BOARD", description: "The storyboard illustrates Zoe's journey using EcoStitch. After struggling to fix a button on her favorite jacket, she discovers the app, uploads details, and successfully uses the platform to get her garment professionally repaired. The process highlights EcoStitch's seamless and efficient user experience."},
-            { type: "image", src: "/images/project1/Project1 Web_Page_14.jpg", header: "TASK FLOW", description: "This task flow diagram illustrates Zoe Zhao’s journey as she interacts with the EcoStitch app, emphasizing the seamless and convenient process of accessing professional repair services for her cherished jacket by fix the dropped button." },
-            { type: "image", src: "/images/project1/Project1 Web_Page_14_5.jpg", header: "INTERVIEW RESULTS", description: "I picked interviewers from my large target audience and interviewed them in person. During the interviews, I took a lot of notes and observed them. I found out that all of them care about sustainability, showing interests in slow fashion practices. It was interesting that each person has diverse demands for a trustworthy and easy-to-access clothing care app." },
-            { type: "image", src: "/images/project1/Project1 Web_Page_15.jpg", header: "USER TESTING METRICS", description: " The user testing metrics summarize the app's usability improvements. After the second round of testing, participants' ease-of-use ratings increased from 4.14 to 4.85. Most users completed tasks successfully and expressed high satisfaction, validating the app's intuitive design and functionality."},
-            { type: "image", src: "/images/project1/Project1 Web_Page_16.jpg", header: "HIGH-FIDELITY WIREFRAMES", description: " These screens shows the steps of user choosing service at the bottom menu bar, then selecting jacket at mending section, and choosing the service type of replacing buttons.  " },
-            { type: "image", src: "/images/project1/Project1 Web_Page_17.jpg", description: "These screens illustrates the steps of user inputing item description, then inputing mending details, and choosing delivery preference.  " },
-            { type: "image", src: "/images/project1/Project1 Web_Page_18.jpg", description: "These screens shows the steps of user checking out, then make payment, and finishing booking the service. " },
+            { type: "image", src: "/images/project1/Project1 Web_Page_12.jpg", highlight: null, header: "PERSONA", description: "The persona represents Zoe Zhao, who values sustainable fashion but struggles to find reliable clothing repair services. Her frustrations include miscommunication, lack of trustworthy platforms, and unmet aesthetic needs. EcoStitch addresses these issues with accessible, user-friendly solutions tailored for people like Zoe." },
+            { type: "image", src: "/images/project1/Project1 Web_Page_13.jpg", highlight: null, header: "STORY BOARD", description: "The storyboard illustrates Zoe's journey using EcoStitch. After struggling to fix a button on her favorite jacket, she discovers the app, uploads details, and successfully uses the platform to get her garment professionally repaired. The process highlights EcoStitch's seamless and efficient user experience."},
+            { type: "image", src: "/images/project1/Project1 Web_Page_14.jpg", highlight: null, header: "TASK FLOW", description: "This task flow diagram illustrates Zoe Zhao’s journey as she interacts with the EcoStitch app, emphasizing the seamless and convenient process of accessing professional repair services for her cherished jacket by fix the dropped button." },
+            { type: "image", src: "/images/project1/Project1 Web_Page_14_5.jpg", highlight: null, header: "INTERVIEW RESULTS", description: "I picked interviewers from my large target audience and interviewed them in person. During the interviews, I took a lot of notes and observed them. I found out that all of them care about sustainability, showing interests in slow fashion practices. It was interesting that each person has diverse demands for a trustworthy and easy-to-access clothing care app." },
+            { type: "image", src: "/images/project1/Project1 Web_Page_15.jpg", highlight: null, header: "USER TESTING METRICS", description: " The user testing metrics summarize the app's usability improvements. After the second round of testing, participants' ease-of-use ratings increased from 4.14 to 4.85. Most users completed tasks successfully and expressed high satisfaction, validating the app's intuitive design and functionality."},
+            { type: "image", src: "/images/project1/Project1 Web_Page_16.jpg", highlight: null, header: "HIGH-FIDELITY WIREFRAMES", description: " These screens shows the steps of user choosing service at the bottom menu bar, then selecting jacket at mending section, and choosing the service type of replacing buttons.  " },
+            { type: "image", src: "/images/project1/Project1 Web_Page_17.jpg", highlight: null, description: "These screens illustrates the steps of user inputing item description, then inputing mending details, and choosing delivery preference.  " },
+            { type: "image", src: "/images/project1/Project1 Web_Page_18.jpg", highlight: null, description: "These screens shows the steps of user checking out, then make payment, and finishing booking the service. " },
             // { type: "image", src: "/images/project1/Project1 Web_Page_19.jpg", header: "PROTOTYPE" },
             {
                 type: "video",
                 src: "/videos/P1Prototype.mp4",
                 header: "Prototype",
+                highlight: null,
                 // description: "This is a prototype demonstration of EcoStitch.",
             },
         ],
@@ -95,38 +97,38 @@ export const projects: Project[] = [
             src: "/images/project2/cover.jpg"
         },
         media: [
-            { type: "image", src: "/images/project2/Project2 Web_Page_1.jpg", header: "BACKGROUND RESEARCH", description: "As remote work becomes the norm, effective digital tools are essential for managing tasks and meeting deadlines. Taskit is a task management dashboard designed to help teams track progress intuitively and efficiently. The project required tackling the challenges of remote collaboration by focusing on creating a user-friendly, visually appealing interface.\n" +
+            { type: "image", src: "/images/project2/Project2 Web_Page_1.jpg", header: "BACKGROUND RESEARCH", highlight: null, description: "As remote work becomes the norm, effective digital tools are essential for managing tasks and meeting deadlines. Taskit is a task management dashboard designed to help teams track progress intuitively and efficiently. The project required tackling the challenges of remote collaboration by focusing on creating a user-friendly, visually appealing interface.\n" +
                     "\n" +
                     "This case study highlights the design process, from user research and ideation to iterative development and the final product. Key design decisions are examined, showcasing how they addressed user needs and contributed to a successful outcome.\n" },
-            { type: "image",  header: "TasKit - Remote Employees/Freelancer Task Management Dashboard"},
-            { type: "image",  list:[
+            { type: "image",  header: "TasKit - Remote Employees/Freelancer Task Management Dashboard",highlight: null},
+            { type: "image",  highlight: null, list:[
                     "Concept:   A task management solution designed for remote employees and freelancers.",
                 ]},
-            { type: "image",  list:[
+            { type: "image",  highlight: null, list:[
                     "Target Audience:   Employees and freelancers aged 20-60 working remotely or in distributed teams.",
                 ]},
-            { type: "image",  list:[
+            { type: "image", highlight: null,  list:[
                     "Benefits: ",
                     "- Streamlines task and workflow management for companies with distributed teams across regions or countries.\n",
                     "- Enhances communication and collaboration for teams working from home or other remote locations.\n",
                     "- Helps companies reduce overhead costs while maintaining productivity and efficiency.\n"
                 ]},
-            { type: "image",  list:[
+            { type: "image", highlight: null,  list:[
                     "Features: ",
                     "- Streamlines task and workflow management for companies with distributed teams across regions or countries.\n",
                     "- Enhances communication and collaboration for teams working from home or other remote locations.\n",
                     "- Helps companies reduce overhead costs while maintaining productivity and efficiency.\n"
                 ]},
             // { type: "image", src: "/images/project2/Project2 Web_Page_2.jpg", highlight: "Test" },
-            { type: "image", src: "/images/project2/Project2 Web_Page_3.jpg", header: "PERSONA", description: "Emily Johnson, a skilled UI/UX designer. The persona shows her frustrations, needs, and goals, offering insights into the target audience’s challenges and priorities for the task management dashboard." },
-            { type: "image", src: "/images/project2/Project2 Web_Page_4.jpg", header: "SKETCHES", description: "My initial hand-drawn sketches explore the core layout and structure of the dashboard, focusing on key components like task lists, team chats, and progress tracking." },
-            { type: "image", src: "/images/project2/Project2 Web_Page_5.jpg", header: "MOOD BOARD", description: "The moodboard defines the visual direction, incorporating soothing pastel gradients, soft tones, and modern UI inspirations to create a calm and professional interface."},
-            { type: "image", src: "/images/project2/Project2 Web_Page_6.jpg", header: "STYLE GUIDE", description: "My style guide establishes the design system, including a harmonious color palette, typeface choices, button styles, and icons, ensuring consistency across the dashboard." },
-            { type: "image", src: "/images/project2/Project2 Web_Page_7.jpg", header: "LOW-FIDELITY WIREFRAMES", description: "The low-fidelity wireframe focuses on the dashboard’s functionality and layout, mapping out the basic structure without detailed visuals." },
-            { type: "image", src: "/images/project2/Project2 Web_Page_8.jpg", header: "MID-FIDELITY WIREFRAMES", description: "This version adds more visual clarity, including refined layouts and placeholder elements, offering a closer look at the dashboard’s components." },
-            { type: "image", src: "/images/project2/Project2 Web_Page_9.jpg", header: "HIGH-FIDELITY WIREFRAMES", description: "The final polished design integrates colors, typography, and interactive elements, showcasing the fully realized dashboard with visual appeal and user-friendly navigation." },
-            { type: "image", src: "/images/project2/Project2 Web_Page_10.jpg", header: "MOCKUP" },
-            { type: "image", header: "TAKEAWAY", description: "This case study highlights the importance of understanding user needs, thoughtful design iteration, and visual consistency in creating a user-friendly task management dashboard. By combining research, ideation, and refined design systems, TasKit successfully addresses the challenges of remote collaboration, enhancing productivity and user experience." },
+            { type: "image", src: "/images/project2/Project2 Web_Page_3.jpg", header: "PERSONA", highlight: null, description: "Emily Johnson, a skilled UI/UX designer. The persona shows her frustrations, needs, and goals, offering insights into the target audience’s challenges and priorities for the task management dashboard." },
+            { type: "image", src: "/images/project2/Project2 Web_Page_4.jpg", header: "SKETCHES", highlight: null, description: "My initial hand-drawn sketches explore the core layout and structure of the dashboard, focusing on key components like task lists, team chats, and progress tracking." },
+            { type: "image", src: "/images/project2/Project2 Web_Page_5.jpg", header: "MOOD BOARD", highlight: null, description: "The moodboard defines the visual direction, incorporating soothing pastel gradients, soft tones, and modern UI inspirations to create a calm and professional interface."},
+            { type: "image", src: "/images/project2/Project2 Web_Page_6.jpg", header: "STYLE GUIDE", highlight: null, description: "My style guide establishes the design system, including a harmonious color palette, typeface choices, button styles, and icons, ensuring consistency across the dashboard." },
+            { type: "image", src: "/images/project2/Project2 Web_Page_7.jpg", header: "LOW-FIDELITY WIREFRAMES", highlight: null, description: "The low-fidelity wireframe focuses on the dashboard’s functionality and layout, mapping out the basic structure without detailed visuals." },
+            { type: "image", src: "/images/project2/Project2 Web_Page_8.jpg", header: "MID-FIDELITY WIREFRAMES", highlight: null, description: "This version adds more visual clarity, including refined layouts and placeholder elements, offering a closer look at the dashboard’s components." },
+            { type: "image", src: "/images/project2/Project2 Web_Page_9.jpg", header: "HIGH-FIDELITY WIREFRAMES", highlight: null, description: "The final polished design integrates colors, typography, and interactive elements, showcasing the fully realized dashboard with visual appeal and user-friendly navigation." },
+            { type: "image", src: "/images/project2/Project2 Web_Page_10.jpg", header: "MOCKUP", highlight: null},
+            { type: "image", header: "TAKEAWAY", highlight: null, description: "This case study highlights the importance of understanding user needs, thoughtful design iteration, and visual consistency in creating a user-friendly task management dashboard. By combining research, ideation, and refined design systems, TasKit successfully addresses the challenges of remote collaboration, enhancing productivity and user experience." },
         ],
         description: "Dashboard design for remote worker’s task management.",
         slug: "taskit",

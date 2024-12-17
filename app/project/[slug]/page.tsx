@@ -47,184 +47,13 @@ const ProjectDetail = ({ params }: { params: { slug: string } }) => {
     const prevProject = projects[projectIndex - 1] || projects[projects.length - 1];
     const nextProject = projects[projectIndex + 1] || projects[0];
 
+    // project.media?.forEach((item) => console.log("Item:", item));
+
+
     return (
         <div
             // style={{textAlign: "center"}}
         >
-
-            <div
-                style={{
-                    textAlign: "center"
-                }}>
-                <h1
-                    style={{
-                        fontSize: "45px",
-                    }}
-                >{project.title}</h1>
-                <p>{project.description}</p>
-            </div>
-
-            {/*#####*/}
-            {/*/!* Display Images with Headers, Descriptions, and Lists *!/*/}
-            {/*<div className="media-gallery"*/}
-            {/*     style={{*/}
-            {/*         textAlign: "left"*/}
-            {/*     }}*/}
-            {/*>*/}
-            {/*    {project.media?.map((item, index) => (*/}
-            {/*        <div*/}
-            {/*            key={index}*/}
-            {/*            // style={{*/}
-            {/*            // marginBottom: "40px",*/}
-            {/*            // textAlign: "center"*/}
-            {/*            // }}*/}
-            {/*            style={{*/}
-            {/*                display: "flex",*/}
-            {/*                flexDirection: "column", // Align items vertically*/}
-            {/*                alignItems: "center", // Center align content horizontally*/}
-            {/*                margin: "0 auto", // Center the entire block*/}
-            {/*                maxWidth: "90%", // Ensure consistent width for both image and text*/}
-            {/*                textAlign: "left", // Left-align the text*/}
-            {/*            }}*/}
-            {/*        >*/}
-            {/*            /!* Header *!/*/}
-            {/*            {item.header && (*/}
-            {/*                <h2*/}
-            {/*                    style={{*/}
-            {/*                        textAlign: "left",*/}
-            {/*                        fontSize: "35px",*/}
-            {/*                        fontWeight: "bold",*/}
-            {/*                        maxWidth: "800px", // Consistent with the other elements*/}
-            {/*                        margin: "0 auto", // Center align horizontally*/}
-            {/*                        // color: "#A54f25",*/}
-            {/*                        color: colorMap[project.title] || "#4A4A4A", // Default color if no match*/}
-            {/*                        marginBottom: "10px",*/}
-            {/*                        marginTop: "120px",*/}
-            {/*                        // marginTop: "100px", // Add this line for space above the header*/}
-            {/*                    }}*/}
-            {/*                >*/}
-            {/*                    {item.header}*/}
-            {/*                </h2>*/}
-            {/*            )}*/}
-
-            {/*            /!* Description *!/*/}
-            {/*            {item.description && (*/}
-            {/*                <div*/}
-            {/*                    style={{*/}
-            {/*                        textAlign: "left",*/}
-            {/*                        margin: "20px auto",*/}
-            {/*                        padding: "10px 20px",*/}
-            {/*                        maxWidth: "90%", // Limit width for better readability*/}
-            {/*                    }}*/}
-            {/*                >*/}
-            {/*                    /!* Additional Highlighted Text *!/*/}
-            {/*                    {item.highlight && (*/}
-            {/*                        <p*/}
-            {/*                            style={{*/}
-            {/*                                fontSize: "20px", // Larger font for emphasis*/}
-            {/*                                fontWeight: "bold", // Bold for emphasis*/}
-            {/*                                color: "#4A4A4A", // Match the theme color*/}
-            {/*                                // marginBottom: "15px",*/}
-            {/*                            }}*/}
-            {/*                        >*/}
-            {/*                            {item.highlight}*/}
-            {/*                        </p>*/}
-            {/*                    )}*/}
-            {/*                </div>*/}
-            {/*            )}*/}
-
-            {/*            /!* Render Image or Video *!/*/}
-            {/*            {item.type === "image" && item.src? (*/}
-            {/*                <img*/}
-            {/*                    src={item.src}*/}
-            {/*                    // alt={"" || `Media ${index + 1}`}*/}
-            {/*                    style={{*/}
-            {/*                        maxWidth: SMALL_IMAGES.includes(item.src)*/}
-            {/*                            ? "50%" // Smaller size for specific images*/}
-            {/*                            : "85%", // Default size for other images*/}
-            {/*                        height: "auto",*/}
-            {/*                        objectFit: "contain", // Avoid cropping*/}
-            {/*                        borderRadius: "10px",*/}
-            {/*                        // marginTop: "5px",*/}
-            {/*                    }}*/}
-            {/*                />*/}
-            {/*            ) : item.type === "video" ? (*/}
-            {/*                <video*/}
-            {/*                    autoPlay*/}
-            {/*                    loop*/}
-            {/*                    muted*/}
-            {/*                    style={{*/}
-            {/*                        maxWidth: "35%",*/}
-            {/*                        // width: "auto",*/}
-            {/*                        maxHeight: "auto",*/}
-            {/*                        objectFit: "contain", // Avoid cropping*/}
-            {/*                        borderRadius: "10px",*/}
-            {/*                        marginTop: "20px",*/}
-            {/*                    }}*/}
-            {/*                >*/}
-            {/*                    <source src={item.src} type="video/mp4"/>*/}
-            {/*                    Your browser does not support the video tag.*/}
-            {/*                </video>*/}
-            {/*            ) : null}*/}
-
-
-            {/*            /!* Description *!/*/}
-            {/*            {item.description && (*/}
-            {/*                <div*/}
-            {/*                    style={{*/}
-            {/*                        textAlign: "left",*/}
-            {/*                        // margin: "20px auto",*/}
-            {/*                        // padding: "10px 20px",*/}
-            {/*                        maxWidth: "90%", // Limit width for better readability*/}
-            {/*                    }}*/}
-            {/*                >*/}
-            {/*                    <p*/}
-            {/*                        style={{*/}
-            {/*                            fontSize: "20px", // Slightly larger font*/}
-            {/*                            lineHeight: "1.6", // Improve readability with better line spacing*/}
-            {/*                            color: "#4A4A4A", // A slightly muted color for text*/}
-            {/*                            fontWeight: "400", // Regular font weight for body text*/}
-            {/*                            // marginBottom: "20px",*/}
-            {/*                        }}*/}
-            {/*                    >*/}
-            {/*                        {item.description}*/}
-            {/*                    </p>*/}
-
-
-            {/*                </div>*/}
-            {/*            )}*/}
-
-
-            {/*            {item.list && (*/}
-            {/*                <ul*/}
-            {/*                    style={{*/}
-            {/*                        margin: "20px auto", // Center align with spacing*/}
-            {/*                        // paddingLeft: "20px", // Standard left padding for the list*/}
-            {/*                        textAlign: "left",*/}
-            {/*                        maxWidth: "90%", // Align with description width*/}
-            {/*                        lineHeight: "1.8", // Improve line spacing*/}
-            {/*                    }}*/}
-            {/*                >*/}
-            {/*                    {item.list.map((listItem, i) => (*/}
-            {/*                        <li*/}
-            {/*                            key={i}*/}
-            {/*                            style={{*/}
-            {/*                                marginBottom: "15px", // Add space after each list item*/}
-            {/*                                fontSize: "18px", // Slightly larger font*/}
-            {/*                                color: "#4A4A4A", // Muted text color*/}
-            {/*                            }}*/}
-            {/*                        >*/}
-            {/*                            {listItem}*/}
-            {/*                        </li>*/}
-            {/*                    ))}*/}
-            {/*                </ul>*/}
-            {/*            )}*/}
-
-            {/*        </div>*/}
-            {/*    ))}*/}
-            {/*</div>*/}
-
-            {/*####*/}
 
             <div
                 style={{
@@ -287,6 +116,24 @@ const ProjectDetail = ({ params }: { params: { slug: string } }) => {
                                 </h2>
                             )}
 
+                            {/* Highlight Section */}
+                            {/*{console.log("Highlight:", item.highlight)}*/}
+                            {item.highlight !== null &&  (
+                                <p
+                                    style={{
+                                        fontSize: "20px", // Larger font for emphasis
+                                        fontWeight: "bold",
+                                        color: "#4A4A4A", // Custom color for highlights
+                                        marginBottom: "10px",
+                                        textAlign: "left", // Align with other elements
+                                    }}
+                                >
+                                    {item.highlight}
+                                </p>
+                            )}
+
+
+
                             {/* Image or Video */}
                             {item.type === "image" && item.src ? (
                                 <img
@@ -294,8 +141,8 @@ const ProjectDetail = ({ params }: { params: { slug: string } }) => {
                                     style={{
                                         // width: "100%", // Reduce the image size
                                         // maxWidth: "800px", // Ensure it doesn’t get too large on wide screens
-                                        width: SMALL_IMAGES.includes(item.src) ? "50%" : "100%", // Smaller width for specific images
-                                        maxWidth: SMALL_IMAGES.includes(item.src) ? "400px" : "800px", // Limit max size
+                                        width: SMALL_IMAGES.includes(item.src) ? "70%" : "100%", // Smaller width for specific images
+                                        maxWidth: SMALL_IMAGES.includes(item.src) ? "600px" : "800px", // Limit max size
                                         height: "auto",
                                         display: "block", // Ensures the image behaves as a block element
                                         margin: "0 auto", // Center the image horizontally
@@ -309,7 +156,9 @@ const ProjectDetail = ({ params }: { params: { slug: string } }) => {
                                     loop
                                     muted
                                     style={{
-                                        width: "100%",
+                                        width: "50%",
+                                        display: "block", // Ensures the image behaves as a block element
+                                        margin: "0 auto", // Center the image horizontally
                                         borderRadius: "10px",
                                         marginBottom: "20px",
                                     }}
@@ -318,6 +167,8 @@ const ProjectDetail = ({ params }: { params: { slug: string } }) => {
                                     Your browser does not support the video tag.
                                 </video>
                             ) : null}
+
+
 
                             {/* Description */}
                             {item.description && (
