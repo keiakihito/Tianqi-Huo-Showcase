@@ -35,7 +35,7 @@ const containerStyle = {
 
 const imageStyle = (src: string): React.CSSProperties => ({
     width:
-        MICRO_COVERS.includes(src) ? "30%":
+        MICRO_COVERS.includes(src) ? "35%":
             SMALL_COVERS.includes(src) ? "65%" :
                 MEDIUM_COVERS.includes(src) ? "70%" :
                     "80%",
