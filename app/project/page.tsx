@@ -3,16 +3,21 @@ import Link from "next/link";
 import { projects } from "./projectsData";
 
 // Define shared styles for covers
-const SMALL_COVERS = [
-    "/images/project2/cover.jpg",
+const MICRO_COVERS = [
     "/images/project5/cover.jpg"
 ];
 
+const SMALL_COVERS = [
+    "/images/project2/cover.jpg",
+];
+
 const MEDIUM_COVERS = [
-    "/images/project1/cover.jpg",
+    // "/images/project1/cover.jpg",
     "/images/project3/cover.jpg",
     "/images/project4/cover.jpg",
 ];
+
+
 
 // Centralized styling for consistency
 const containerStyle = {
@@ -29,7 +34,11 @@ const containerStyle = {
 };
 
 const imageStyle = (src: string): React.CSSProperties => ({
-    width: SMALL_COVERS.includes(src) ? "50%" : MEDIUM_COVERS.includes(src) ? "60%" : "100%",
+    width:
+        MICRO_COVERS.includes(src) ? "25%":
+            SMALL_COVERS.includes(src) ? "55%" :
+                MEDIUM_COVERS.includes(src) ? "60%" :
+                    "70%",
     height: "auto",
     objectFit: "contain", // This is now explicitly valid
     borderRadius: "10px",
@@ -85,20 +94,6 @@ const ProjectList = () => {
                         </Link>
                     )}
 
-                    {/*/!* Link Button *!/*/}
-                    {/*<div style={{marginTop: "10px"}}>*/}
-                    {/*<Link href={`/project/${project.slug}`} passHref>*/}
-                    {/*        <Button*/}
-                    {/*            variant="contained"*/}
-                    {/*            style={{*/}
-                    {/*                backgroundColor: colorMap[project.title] || "#007bff",*/}
-                    {/*                color: "white",*/}
-                    {/*            }}*/}
-                    {/*        >*/}
-                    {/*            View Project*/}
-                    {/*        </Button>*/}
-                    {/*    </Link>*/}
-                    {/*</div>*/}
                 </div>
             ))}
         </div>
