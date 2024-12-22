@@ -44,7 +44,7 @@ const Index = () => {
                                  width: "100%",
                                  maxWidth: "800px",
                                  height: "auto",
-                                 borderRadius: "50%", // Circular profile image
+                                 // borderRadius: "50%", // Circular profile image
                                  margin: "0 auto", // Center the image horizontally
                                  objectFit: "cover",
                              }}/>
