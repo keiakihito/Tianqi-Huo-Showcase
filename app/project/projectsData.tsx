@@ -184,7 +184,7 @@ export const projects: Project[] = [
         type: "project",
         cover: {
             type: "image",
-            src: "/images/project4/cover.jpg"
+            src: "/images/project4/cover.png"
         },
         media: [
             { type: "image", src: "/images/project4/1.png", header: "BACKGROUND RESEARCH", highlight: "BACKGROUND", description: "According to the Clever’s COVID-19 Financial Impact Series, 61% of Americans will run out of emergency savings by the end of 2021. Many people have faced major financial struggles. It’s time to review finances and make a goal for saving money. Reducing expenses is key to building an emergency fund, and the first step is deciding the amount of money that can be reasonably afforded to save every month. Saving from now in order to have a secured financial future is vitally important." },
@@ -211,9 +211,11 @@ export const projects: Project[] = [
             { type: "image", src: "/images/project4/12.png", description: "" },
             { type: "image", highlight: "TEST CONCLUSION",  description: "Zoe took each process of the test seriously. She recently using an money recording application, therefore I think she was comparing the usability of the one she is using with my design. Based on her reaction summarized the revisions listing on the right." },
             { type: "image", highlight: "REVISE",  description: "I changed the default from a pencil mark to “0.00” in the input box of “Amount”. The purpose is to let users know instead of input dot themselves, the system will automatically show the dot when they input amount." },
-            { type: "image", src: "/images/project4/13.png", header: "MOOD BOARD", description: "" },
-            { type: "image", src: "/images/project4/14.png", header: "STYLE GUIDE",  description: "" },
+            { type: "image", src: "/images/project4/13.png", header: "MOOD BOARD", description: "I was inspired by calming tones, modern typography, and clean design elements that convey simplicity, trust, and a peaceful aesthetic. I aim to incorporate these colors and shapes into my UI design." },
+            { type: "image", src: "/images/project4/14.png", header: "STYLE GUIDE",  description: "Inspired by my mood board, my style guide defines the app’s design system, featuring a harmonious color palette, Roboto typography, and consistent UI components." },
             { type: "image", src: "/images/project4/15.png", header: "MID-FIDELITY WIREFRAMES", description: "" },
+            { type: "image", src: "/images/project4/16_1.png", header: "High-FIDELITY WIREFRAMES", description: "" },
+            { type: "image", src: "/images/project4/16_2.png", description: "The high-fidelity wireframes present the final design with polished visuals, incorporating the defined style guide. These screens highlight the app's interface and user-friendly features." },
         ],
         description: "An expense and income tracking app design",
         slug: "piggy-bank",
