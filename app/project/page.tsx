@@ -35,10 +35,10 @@ const containerStyle = {
 
 const imageStyle = (src: string): React.CSSProperties => ({
     width:
-        MICRO_COVERS.includes(src) ? "25%":
-            SMALL_COVERS.includes(src) ? "55%" :
-                MEDIUM_COVERS.includes(src) ? "60%" :
-                    "70%",
+        MICRO_COVERS.includes(src) ? "30%":
+            SMALL_COVERS.includes(src) ? "65%" :
+                MEDIUM_COVERS.includes(src) ? "70%" :
+                    "80%",
     height: "auto",
     objectFit: "contain", // This is now explicitly valid
     borderRadius: "10px",
